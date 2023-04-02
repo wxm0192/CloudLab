@@ -1,0 +1,1812 @@
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+The pod already  exists
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+The pod already  exists
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh get my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+POD IP is : 
+10.244.1.51
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh del my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+pod "labpod-1-2" force deleted
+The lab pod is deleted   
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   1/1     Running   0          2s    10.244.1.52   node1   <none>           <none>
+0
+Running
+POD IP is :  labpod-1-2: 10.244.1.52
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh del my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+pod "labpod-1-2" force deleted
+The lab pod is deleted   
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+pod/labpod-1-2 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   1/1     Running   0          2s    10.244.1.53   node1   <none>           <none>
+0
+Running
+POD IP is :  labpod-1-2: 10.244.1.53
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh del my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+pod "labpod-1-2" force deleted
+The lab pod is deleted   
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+pod/labpod-1-2 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-2   1/1     Running   0          3s    10.244.1.54   node1   <none>           <none>
+0
+Running
+POD IP is :  labpod-1-2: 10.244.1.54
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh get my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+POD IP is : 
+10.244.1.54
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh new my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+The pod already  exists
+ usage : ./docker-lab-start.sh  Operation_type(new, del )  Images-name  Tag   lab_id  session_id 
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh get my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+POD IP is : 
+10.244.1.54
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  2
+./docker-lab-start.sh get my_web_ssh 22.1.31 1 2   
+Pod Name: labpod-1-2
+This is the image :  my_web_ssh:22.1.31
+POD IP is : 
+10.244.1.54
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+This is the image :  my_web_ssh:22.1.31
+The pod doesn't exist
+Del Failed
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+This is the image :  my_web_ssh:22.1.31
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.55   node1   <none>           <none>
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.55
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+This is the image :  my_web_ssh:22.1.31
+pod "labpod-6-8" force deleted
+The lab pod is deleted   
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The required image( my_web_ssh:22.1.31 ) does not exist  
+ usage : ./docker-lab-start.sh  Operation_type(new, del , get)  Images-name  Tag   lab_id  session_id 
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.58
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+-e POD IP is : 
+10.244.1.58
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.58
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is :  labpod-6-8:
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is :  labpod-6-8:
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is :  labpod-6-8:
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is :  labpod-6-8:
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.59
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.59
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.60
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.60
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.61
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.61
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.62
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.62
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.63
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.63
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.64
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.64
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.64
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.65
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.65
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.65
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.66
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.66
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.66
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.67
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.67
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.68
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+POD IP is :  labpod-6-8: 10.244.1.69
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+POD IP is : 10.244.1.69
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+labpod-6-8:Running:10.244.1.70
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+labpod-6-8:Running:10.244.1.71
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+0
+Running
+labpod-6-8:Running:10.244.1.72
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:38:01 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          3s    10.244.1.73   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.73
+Fri Dec  9 10:38:04 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:38:04 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:41:03 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.74   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.74
+Fri Dec  9 10:41:05 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:41:06 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:44:21 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod doesn't exist
+Fri Dec  9 10:44:41 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.75   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.75
+Fri Dec  9 10:44:57 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:45:46 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+The pod already  exists
+Fri Dec  9 10:45:46 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:45:46 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:46:06 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.76   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.76
+Fri Dec  9 10:46:09 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:46:10 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:48:24 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.77   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.77
+Fri Dec  9 10:48:27 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:48:27 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:52:24 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.78   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.78
+Fri Dec  9 10:52:27 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:52:27 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Fri Dec  9 10:53:14 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          3s    10.244.1.79   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.79
+Fri Dec  9 10:53:17 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 10:53:17 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Fri Dec  9 11:56:53 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1
+Lab ID :  6
+Session ID :  8
+./docker-lab-start.sh new my_web_ssh 22.1 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          3s    <none>   node1   <none>           <none>
+0
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          5s    <none>   node1   <none>           <none>
+2
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          7s    <none>   node1   <none>           <none>
+4
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          10s   <none>   node1   <none>           <none>
+6
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          12s   <none>   node1   <none>           <none>
+8
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          14s   <none>   node1   <none>           <none>
+10
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          16s   <none>   node1   <none>           <none>
+12
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          19s   <none>   node1   <none>           <none>
+14
+ContainerCreating
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          21s   10.244.1.80   node1   <none>           <none>
+16
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          23s   10.244.1.80   node1   <none>           <none>
+18
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          25s   10.244.1.80   node1   <none>           <none>
+20
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          28s   10.244.1.80   node1   <none>           <none>
+22
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          30s   10.244.1.80   node1   <none>           <none>
+24
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          32s   10.244.1.80   node1   <none>           <none>
+26
+ErrImagePull
+NAME         READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ImagePullBackOff   0          35s   10.244.1.80   node1   <none>           <none>
+28
+ImagePullBackOff
+Fri Dec  9 12:00:40 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1 6 8   
+Pod Name: labpod-6-8
+The pod already  exists
+Fri Dec  9 12:00:40 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 12:00:41 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Fri Dec  9 12:00:52 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          2s    <none>   node1   <none>           <none>
+0
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          5s    <none>   node1   <none>           <none>
+2
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          7s    <none>   node1   <none>           <none>
+4
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          9s    <none>   node1   <none>           <none>
+6
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          11s   <none>   node1   <none>           <none>
+8
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          14s   <none>   node1   <none>           <none>
+10
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          16s   <none>   node1   <none>           <none>
+12
+ContainerCreating
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          18s   10.244.1.81   node1   <none>           <none>
+14
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          21s   10.244.1.81   node1   <none>           <none>
+16
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          23s   10.244.1.81   node1   <none>           <none>
+18
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          25s   10.244.1.81   node1   <none>           <none>
+20
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          27s   10.244.1.81   node1   <none>           <none>
+22
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          30s   10.244.1.81   node1   <none>           <none>
+24
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          32s   10.244.1.81   node1   <none>           <none>
+26
+ErrImagePull
+NAME         READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ImagePullBackOff   0          34s   10.244.1.81   node1   <none>           <none>
+28
+ImagePullBackOff
+Fri Dec  9 12:01:26 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Fri Dec  9 12:01:27 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Fri Dec  9 12:04:37 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          2s    <none>   node1   <none>           <none>
+0
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          4s    <none>   node1   <none>           <none>
+2
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          6s    <none>   node1   <none>           <none>
+4
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          9s    <none>   node1   <none>           <none>
+6
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          11s   <none>   node1   <none>           <none>
+8
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          13s   <none>   node1   <none>           <none>
+10
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          16s   <none>   node1   <none>           <none>
+12
+ContainerCreating
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          18s   <none>   node1   <none>           <none>
+14
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          20s   10.244.1.82   node1   <none>           <none>
+16
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          22s   10.244.1.82   node1   <none>           <none>
+18
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          25s   10.244.1.82   node1   <none>           <none>
+20
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          27s   10.244.1.82   node1   <none>           <none>
+22
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          29s   10.244.1.82   node1   <none>           <none>
+24
+ErrImagePull
+NAME         READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ErrImagePull   0          32s   10.244.1.82   node1   <none>           <none>
+26
+ImagePullBackOff
+NAME         READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ImagePullBackOff   0          34s   10.244.1.82   node1   <none>           <none>
+28
+ImagePullBackOff
+pod "labpod-6-8" force deleted
+Sat Dec 10 04:16:46 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.83   node1   <none>           <none>
+0
+Running
+labpod-6-8:Running:10.244.1.83
+Sat Dec 10 04:16:49 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Sat Dec 10 04:16:49 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Sat Dec 10 04:19:20 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.84   node1   <none>           <none>
+0
+Running
+labpod-6-8:10.244.1.84:Running
+Sat Dec 10 04:19:23 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Sat Dec 10 04:19:23 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Sat Dec 10 04:36:37 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod/labpod-1-1 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   1/1     Running   0          2s    10.244.1.85   node1   <none>           <none>
+0
+Running
+labpod-1-1:10.244.1.85:Running
+Sat Dec 10 04:45:50 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod/labpod-1-1 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   1/1     Running   0          2s    10.244.1.86   node1   <none>           <none>
+0
+Running
+labpod-1-1:10.244.1.86:Running
+Sat Dec 10 05:54:21 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod/labpod-6-8 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-6-8   1/1     Running   0          2s    10.244.1.87   node1   <none>           <none>
+0
+Running
+labpod-6-8:10.244.1.87:Running
+Sat Dec 10 05:54:24 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  get
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh get my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+Sat Dec 10 05:54:24 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  6
+Session ID :  8
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 6 8   
+Pod Name: labpod-6-8
+pod "labpod-6-8" force deleted
+Sat Dec 10 06:03:54 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod/labpod-1-1 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   1/1     Running   0          2s    10.244.1.88   node1   <none>           <none>
+0
+Running
+labpod-1-1:10.244.1.88:Running
+Sat Dec 10 06:03:57 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod "labpod-1-1" force deleted
+Sat Dec 10 08:23:08 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod/labpod-1-1 created
+NAME         READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME         READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-1-1   1/1     Running   0          3s    10.244.1.89   node1   <none>           <none>
+0
+Running
+labpod-1-1:10.244.1.89:Running
+Sat Dec 10 08:23:11 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Lab ID :  1
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del my_web_ssh 22.1.31 1 1   
+Pod Name: labpod-1-1
+pod "labpod-1-1" force deleted
+Sat Dec 10 08:25:54 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  1107
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 1107 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          1s    <none>   node1   <none>           <none>
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          3s    <none>   node1   <none>           <none>
+0
+ContainerCreating
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          5s    10.244.1.90   node1   <none>           <none>
+2
+ErrImagePull
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          7s    10.244.1.90   node1   <none>           <none>
+4
+ErrImagePull
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          10s   10.244.1.90   node1   <none>           <none>
+6
+ErrImagePull
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          12s   10.244.1.90   node1   <none>           <none>
+8
+ErrImagePull
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          14s   10.244.1.90   node1   <none>           <none>
+10
+ErrImagePull
+NAME          READY   STATUS         RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ErrImagePull   0          16s   10.244.1.90   node1   <none>           <none>
+12
+ErrImagePull
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          19s   10.244.1.90   node1   <none>           <none>
+14
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          21s   10.244.1.90   node1   <none>           <none>
+16
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          23s   10.244.1.90   node1   <none>           <none>
+18
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          26s   10.244.1.90   node1   <none>           <none>
+20
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          28s   10.244.1.90   node1   <none>           <none>
+22
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          30s   10.244.1.90   node1   <none>           <none>
+24
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          32s   10.244.1.90   node1   <none>           <none>
+26
+ImagePullBackOff
+NAME          READY   STATUS             RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ImagePullBackOff   0          35s   10.244.1.90   node1   <none>           <none>
+28
+ErrImagePull
+pod "labpod-31-1" force deleted
+Sat Dec 10 08:40:26 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  2
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 2   
+Pod Name: labpod-31-2
+pod/labpod-31-2 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-2   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-2   1/1     Running   0          2s    10.244.1.91   node1   <none>           <none>
+0
+Running
+labpod-31-2:10.244.1.91:Running
+Sat Dec 10 08:40:29 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  2
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 2   
+Pod Name: labpod-31-2
+pod "labpod-31-2" force deleted
+Sat Dec 10 08:45:45 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   1/1     Running   0          3s    10.244.1.92   node1   <none>           <none>
+0
+Running
+labpod-31-1:10.244.1.92:Running
+Sat Dec 10 08:52:24 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod "labpod-31-1" force deleted
+Sun Dec 11 08:28:52 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   1/1     Running   0          2s    10.244.1.93   node1   <none>           <none>
+0
+Running
+labpod-31-1:10.244.1.93:Running
+Sun Dec 11 08:30:56 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod "labpod-31-1" force deleted
+Sun Dec 11 08:32:31 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+The pod doesn't exist
+Sun Dec 11 08:36:48 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          1s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   1/1     Running   0          3s    10.244.1.94   node1   <none>           <none>
+0
+Running
+labpod-31-1:10.244.1.94:Running
+Sun Dec 11 08:37:14 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod "labpod-31-1" force deleted
+Sun Dec 11 08:39:32 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          0s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   1/1     Running   0          3s    10.244.1.95   node1   <none>           <none>
+0
+Running
+labpod-31-1:10.244.1.95:Running
+Sun Dec 11 08:39:47 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh del lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod "labpod-31-1" force deleted
+Sun Dec 11 08:54:05 UTC 2022
+Operation_Type (new: Create a lab ; del : delete a lab ; get : Get POD IP ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Lab ID :  31
+Session ID :  1
+/usr/share/nginx/www/MySQL/create_lab_env/docker-lab-start.sh new lab_redis 22.1.31 31 1   
+Pod Name: labpod-31-1
+pod/labpod-31-1 created
+NAME          READY   STATUS              RESTARTS   AGE   IP       NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   0/1     ContainerCreating   0          1s    <none>   node1   <none>           <none>
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
+labpod-31-1   1/1     Running   0          3s    10.244.1.96   node1   <none>           <none>
+0
+Running
+labpod-31-1:10.244.1.96:Running

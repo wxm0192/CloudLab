@@ -1,0 +1,24 @@
+[
+    {
+        "lab_id":"1",
+        "image":"my_web_ssh",
+        "tag":"09.01.01",
+        "network":"biz_net",
+        "start_ip":"169.10.0.3",
+        "level":"0",
+        "session_limit":"10",
+        "time_limit":"30",
+        "online_date":"2021-11-20 00:00:00"
+    },
+    {
+        "lab_id":"31",
+        "image":"lab_redis",
+        "tag":"1107",
+        "network":"biz_net",
+        "start_ip":"169.10.0.150",
+        "level":"0",
+        "session_limit":"10",
+        "time_limit":"30",
+        "online_date":"2021-11-20 00:00:00"
+    }
+]

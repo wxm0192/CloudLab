@@ -1,0 +1,27 @@
+class db_connect {
+        public $conn ;
+
+        private $servername = DB_SERVER     ;
+        private $username = DB_USER ;
+        private $password = DB_PWD ;
+        private $dbname = DB_NAME ;
+
+        public function __construct()
+        {
+                //$this->conn = new \mysqli($this->servername, $this->username, $this->password,$this->dbname);
+                $this->conn = new \mysqli(DB_SERVER, DB_USER, DB_PWD ,DB_NAME);
+                //var_dump( $this->conn->server_info) ;
+                echo "<br>";
+                //var_dump( mysqli::server_info) ;
+                echo "<br>";
+                // 检测连接
+                if ($conn->connect_error) {
+                        f_log("连接失败: " . $conn->connect_error);
+			return(-1) ;
+                        }
+                f_log("连接成功: " . $conn->connect_error);
+                var_dump( $this->conn) ;
+                echo "连接成功";
+
+        }
+}

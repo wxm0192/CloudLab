@@ -1,0 +1,49 @@
+        * {
+            border: 0px;
+            padding: 0px;
+            background-color: rgb(238, 230, 219);
+        }
+
+        .header {
+            background-color: #f3e8e8;
+            color: rgb(47, 19, 204);
+            padding: 0px;
+            text-align: center;
+            background-color: rgb(225, 228, 229);
+            /*text-indent: 50px; */
+        }
+
+        table {
+            //display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+
+
+        #div01 {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            height: 50%;
+            width: 100%;
+            display: inline-block;
+            font-size: small;
+        }
+
+        .p-tbl01 {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            height: 10%;
+            width: 24%;
+            display: inline-block;
+        }
+
+        .t-class {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            background-color: aqua;
+
+        }

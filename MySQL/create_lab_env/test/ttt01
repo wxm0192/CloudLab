@@ -1,0 +1,6 @@
+define('DB_SERVER', '10.102.161.40'); 
+define('DB_USER', 'wxm'); 
+define('DB_PWD', 'wxm123321'); 
+define('DB_NAME', 'shiyan'); 
+define('ROOTPATH', '/usr/share/nginx/www/'); 
+define('LOG_FILE_NAME', 'log/log'); 
