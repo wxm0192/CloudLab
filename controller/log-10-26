@@ -1,0 +1,202 @@
+CONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS          PORTS                                                       NAMES
+c374d57e638e   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   21 minutes ago   Up 21 minutes   22/tcp                                                      strange_dhawan
+7d0bb7ff723c   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   25 hours ago     Up 25 hours     22/tcp                                                      adoring_vaughan
+44b6dccdf690   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   3 days ago       Up 3 days       22/tcp                                                      modest_wright
+afa187ec468c   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   5 days ago       Up 5 days       22/tcp                                                      sleepy_johnson
+b3a1b046f4e9   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   6 days ago       Up 6 days       22/tcp                                                      nervous_clarke
+bf434ffea703   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   7 days ago       Up 7 days       22/tcp                                                      nice_visvesvaraya
+099d692aa7ab   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   7 days ago       Up 7 days       22/tcp                                                      busy_austin
+62f7d169d9dd   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   7 days ago       Up 7 days       22/tcp                                                      musing_ramanujan
+8ded28660631   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   7 days ago       Up 7 days       22/tcp                                                      modest_banach
+b6faa959ca89   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   8 days ago       Up 8 days       22/tcp                                                      eager_tereshkova
+10c904ce45f9   my_web_ssh:09.01.01             "/bin/sh -c '/usr/sb…"   4 weeks ago      Up 4 weeks      22/tcp                                                      determined_bell
+b4d11020992a   mysql                           "docker-entrypoint.s…"   4 weeks ago      Up 4 weeks      0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp        mysql
+2c5bea6f1c6d   webssh-with-sshserver:0906-02   "/usr/bin/wssh"          7 weeks ago      Up 7 weeks      22/tcp, 80/tcp, 0.0.0.0:8033->8888/tcp, :::8033->8888/tcp   stoic_bouman
+007a348734b8   webdevops/php-nginx:latest      "/entrypoint supervi…"   7 weeks ago      Up 7 weeks      443/tcp, 0.0.0.0:80->80/tcp, :::80->80/tcp, 9000/tcp        unruffled_bouman
+c374d57e638e  169.10.0.3
+7d0bb7ff723c  169.10.0.8
+44b6dccdf690  169.10.0.7
+afa187ec468c  169.10.0.6
+b3a1b046f4e9  169.10.0.5
+bf434ffea703  169.10.0.4
+099d692aa7ab  169.10.0.12
+62f7d169d9dd  169.10.0.11
+8ded28660631  169.10.0.10
+b6faa959ca89  169.10.0.9
+10c904ce45f9  169.10.0.19
+b4d11020992a  172.17.0.2
+2c5bea6f1c6d  169.10.0.2
+007a348734b8  172.20.0.2
+NETWORK ID     NAME      DRIVER    SCOPE
+320e8c225307   biz_net   bridge    local
+75c0006ac713   bridge    bridge    local
+4efa764877c9   host      host      local
+5d89e8af6377   mgt_net   bridge    local
+a92126e99647   none      null      local
+[
+    {
+        "Name": "mgt_net",
+        "Id": "5d89e8af6377460a6767ccd8d2d1a76e8f5be5c0e4ec9799a1dbc57d39e45202",
+        "Created": "2021-09-02T08:48:03.642184179+08:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.20.0.0/24",
+                    "Gateway": "172.20.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "007a348734b8d7fe74360975eb7853e23743b9e268a36079d18f43422d544485": {
+                "Name": "unruffled_bouman",
+                "EndpointID": "164b023e7f55604533eba471a39901d7f62e8b15cddb46f13d33194bdca57280",
+                "MacAddress": "02:42:ac:14:00:02",
+                "IPv4Address": "172.20.0.2/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+[
+    {
+        "Name": "biz_net",
+        "Id": "320e8c22530765c1138315f3589ea31d16d22954f6ec4414eb44d7174d64fb0f",
+        "Created": "2021-09-02T12:21:04.093531842+08:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "169.10.0.0/24",
+                    "Gateway": "169.10.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "099d692aa7abea54ecae4a8f687287688d31ef79c9ff504ac2191501afc3935f": {
+                "Name": "busy_austin",
+                "EndpointID": "7edb17b5d05e71c0fa9e0fff663fe69042004f674e42081b3d816aebebcfaf2c",
+                "MacAddress": "02:42:a9:0a:00:0c",
+                "IPv4Address": "169.10.0.12/24",
+                "IPv6Address": ""
+            },
+            "10c904ce45f93813dd3346609e4962657618492a69f205d6e4bb1ae37beb533d": {
+                "Name": "determined_bell",
+                "EndpointID": "33d56ec1c24eb3a37992288be5c759ebb48c0532094586ce12cc4d9e72f2c709",
+                "MacAddress": "02:42:a9:0a:00:13",
+                "IPv4Address": "169.10.0.19/24",
+                "IPv6Address": ""
+            },
+            "2c5bea6f1c6d4dd3f8fe45e37fe02a03c6b2615950fc738bd49b191e266b536a": {
+                "Name": "stoic_bouman",
+                "EndpointID": "81079b3b0e6c6673be5f30e26456295e7261cdf1f3f880f6c8c6f70da93f159f",
+                "MacAddress": "02:42:a9:0a:00:02",
+                "IPv4Address": "169.10.0.2/24",
+                "IPv6Address": ""
+            },
+            "44b6dccdf6905dfdd8d6ff9a8d25a2c1d0036ecf602736937aa0b99d38e4b266": {
+                "Name": "modest_wright",
+                "EndpointID": "27d6871ac7fd54193d97e12b2e6fff18cd244c62076bc6a791d8d84c2dfb6481",
+                "MacAddress": "02:42:a9:0a:00:07",
+                "IPv4Address": "169.10.0.7/24",
+                "IPv6Address": ""
+            },
+            "62f7d169d9dd01b7aefa3b1a2b116b0052690838a252388b00d417dd941bec23": {
+                "Name": "musing_ramanujan",
+                "EndpointID": "4505b0d4e100a1a29267bda0ac2adfc670acd8167c372b0a885e7d34ab2815c3",
+                "MacAddress": "02:42:a9:0a:00:0b",
+                "IPv4Address": "169.10.0.11/24",
+                "IPv6Address": ""
+            },
+            "7d0bb7ff723c03733c4b6ae13acca1c88be0d5d030505f15401596905e1e6d45": {
+                "Name": "adoring_vaughan",
+                "EndpointID": "d610725d0c77491e6ab905dce16ea4b0bef8b176ec170a48bb44ebea48aea015",
+                "MacAddress": "02:42:a9:0a:00:08",
+                "IPv4Address": "169.10.0.8/24",
+                "IPv6Address": ""
+            },
+            "8ded28660631efb50a5fa2f8b93359ad94eae1387405a616bfd304ec9d893215": {
+                "Name": "modest_banach",
+                "EndpointID": "4883242832ff99abd7605558531a92d71d175640358a3d1f8d294b86ae7bb03d",
+                "MacAddress": "02:42:a9:0a:00:0a",
+                "IPv4Address": "169.10.0.10/24",
+                "IPv6Address": ""
+            },
+            "afa187ec468c62f5ae7d48ca4b171406dba760c19cce13780c5fcd69026f2fd1": {
+                "Name": "sleepy_johnson",
+                "EndpointID": "c4933739ec922d95a9c21af3013423e6b72cc669e3d5725b8b833db7a3c0fc93",
+                "MacAddress": "02:42:a9:0a:00:06",
+                "IPv4Address": "169.10.0.6/24",
+                "IPv6Address": ""
+            },
+            "b3a1b046f4e9443442577f088297fc19b91a2707d8e56a7e09500e587df49c9e": {
+                "Name": "nervous_clarke",
+                "EndpointID": "61fe0348ec34121cd1888f0f909d2aad257362db37b06958cefd231dc0d509e2",
+                "MacAddress": "02:42:a9:0a:00:05",
+                "IPv4Address": "169.10.0.5/24",
+                "IPv6Address": ""
+            },
+            "b6faa959ca894fed964703bde3ee1d32bba3302b6dd77a849e2f5b4f5fa7b8b7": {
+                "Name": "eager_tereshkova",
+                "EndpointID": "5707b62652bd4b5512fcb1c5e4d4eab9bc5f19412b858ac18674a7d45450b9a2",
+                "MacAddress": "02:42:a9:0a:00:09",
+                "IPv4Address": "169.10.0.9/24",
+                "IPv6Address": ""
+            },
+            "bf434ffea7034dd7d5031ff53ef3f68f8ea822f689ea729b3082803282f6ab84": {
+                "Name": "nice_visvesvaraya",
+                "EndpointID": "5888be76b8f2b26151c5ab87abe9023924ae3391fe10c648999614612d913b1f",
+                "MacAddress": "02:42:a9:0a:00:04",
+                "IPv4Address": "169.10.0.4/24",
+                "IPv6Address": ""
+            },
+            "c374d57e638ed97616e8f5019a84f387db0583513bf1f6df4ab5a09ca4d698cb": {
+                "Name": "strange_dhawan",
+                "EndpointID": "70e315974140a4891f7c323fb68854c662ebb9c366cf227a3e06e09257b0f87b",
+                "MacAddress": "02:42:a9:0a:00:03",
+                "IPv4Address": "169.10.0.3/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+8ded28660631  169.10.0.10
+62f7d169d9dd  169.10.0.11
+099d692aa7ab  169.10.0.12
+10c904ce45f9  169.10.0.19
+2c5bea6f1c6d  169.10.0.2
+c374d57e638e  169.10.0.3
+bf434ffea703  169.10.0.4
+b3a1b046f4e9  169.10.0.5
+afa187ec468c  169.10.0.6
+44b6dccdf690  169.10.0.7
+7d0bb7ff723c  169.10.0.8
+b6faa959ca89  169.10.0.9
+b4d11020992a  172.17.0.2
+007a348734b8  172.20.0.2

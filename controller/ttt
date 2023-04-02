@@ -1,0 +1,59 @@
+#/bin/sh
+
+# For examples : ssh root@172.20.0.1 " /root/aliyun/vm_lab_ctl.sh new m-8vb35k67frag92hcy8pa 2110 biz_net 172.30.2.181 60"
+
+PWD=/root/app/v02/log
+ECS_STATUS_FILE=${PWD}/ecs_status
+
+vm_start(){
+        if [ $# -lt  3 ] ; then
+                echo ' usage : ./vm_start    Images-name  vm_name  time_limit'
+                exit -1;
+        fi
+
+ IMG_ID=$1
+ VM_NAME=$2
+ time_limit=$3
+
+
+#IMG_ID=m-8vb125m26qkvi102ogdp
+# time_limit=3
+ dd=` date -d @$(($(date +%s) + $time_limit*60 )) +%Y-%m-%dT%TZ `
+
+a=`aliyun ecs CreateInstance \
+                --RegionId=cn-zhangjiakou  \
+                --ImageId=$IMG_ID  \
+                --InstanceType=ecs.s6-c1m2.small  \
+                --SecurityGroupId=sg-8vb87jnn7iq7gzp6d01q  \
+                --VSwitchId=vsw-8vbn0qdm4x187nnxcjadp  \
+                --InstanceName=$VM_NAME \
+                --InstanceChargeType=PostPaid  \
+	      	--AutoReleaseTime=$dd \
+             #  --PrivateIpAddress=$IP   \
+		--InternetMaxBandwidthOut=1 \
+                --ResourceGroupId=rg-acfmznbbajghpaq   `
+              #  --DryRun=true
+
+	echo $a
+ 	EID=`echo $a |  jq  '.InstanceId'`
+	echo $EID
+ 	EID=`echo $a |  jq  '.InstanceId'`
+        if [ -z "$EID" ]; then
+                echo "EID is empty" ;
+                echo " Cann't create the ECS" ;
+                exit -1 ;
+        fi
+ 	echo "This is the EID : "$EID
+        echo aliyun ecs DescribeInstances --InstanceIds \'[${EID}]\' | sh | jq '.Instances.Instance[0].Status'
+        status=`echo ./aliyun ecs DescribeInstances --InstanceIds \'[${EID}]\' | sh | jq '.Instances.Instance[0].Status'`
+        while [ "$status" != \"Stopped\" ]
+        do
+                echo 1  ;
+                echo "Creating ECS ...... " ;
+                sleep 1 ;
+                echo "Creating ECS ...... " ;
+                status=`echo aliyun ecs DescribeInstances --InstanceIds \'[${EID}]\' | sh | jq '.Instances.Instance[0].Status'` ;
+                echo ${EID}":"$status                             
+        done
+
+#aliyun ecs ModifyInstanceAutoReleaseTime  --InstanceId=$EID   --AutoReleaseTime=$dd

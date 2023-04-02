@@ -1,0 +1,5 @@
+ <H2 font-size: 30px;>
+Here is a Ajax Text
+</H2>
+<p id="t02">起始坐标位置 ： <span id="c01">坐标</span></p>
+        <p id="t03">坐标偏移量 ： <span id="c02">坐标</span>
