@@ -268,6 +268,43 @@ public function  get_session_status( )
 	$log->f_log("Get  Lab_session Status : ".$this->session_status);
 	return($this->session_status);
 }
+public function  get_session_PIP( ) 
+{
+	global $db_conn ;
+	global $log ;
+	global $my_lab ;
+	$this->get_lab_session($this->lab_id , $this->session_id , $this->user_id) ;
+	$log->f_log("Get  Lab_session Public IP : "  );
+	if($my_lab->lab_type == "docker")
+		{
+			echo "0.0.0.0";
+			return;
+		}
+	if($my_lab->lab_type == "vm")
+		{
+		$log->f_log(" Call vm  Public  IP check ");
+		$vm_name="labvm-".$this->lab_id."-".$this->session_id ;
+		$cmd=array("vm_get_pub_ip.sh",
+				$vm_name );
+		$command=$this->form_command($cmd) ;
+		}
+
+		$return_string = exec($command, $output, $return_var);
+                $log->f_log("The command exec return_string is : ".$return_string  );
+                $log->f_log(implode("\n",$output) );
+		$pip=$return_string ; 
+		$pip = ltrim($pip, "\"");
+		$pip = rtrim($pip, "\"");
+		if(checkIp($pip))
+			{
+				echo $pip;
+			}
+			else
+			{
+				echo "Failed to get  Public IP";
+				return -1 ;
+			}
+}
 
 public function  get_session_IP( ) 
 {

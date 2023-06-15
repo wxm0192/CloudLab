@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mysql  
+  name: mysql-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql  
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: mysql  
+    spec:
+       nodeName: node1
+       shareProcessNamespace: true
+       volumes:
+       - name: data-vol
+         hostPath:
+           path: "/opt/mysql/data/"
+           type: DirectoryOrCreate
+       - name: log-vol
+         hostPath:
+           path: "/opt/mysql/logs/"
+           type: DirectoryOrCreate
+       - name: conf-vol
+         hostPath:
+           path: "/opt/mysql/conf/"
+           type: DirectoryOrCreate
+       - name: conf-file
+         hostPath:
+           path: "/opt/mysql/my.cnf"
+           type: FileOrCreate
+       containers:
+       - image: mysql:latest
+         name: mysql-c
+         volumeMounts:
+         - mountPath: /var/lib/mysql       
+           name: data-vol
+         - mountPath: /var/log/mysql       
+           name: log-vol
+         - mountPath: /etc/mysql           
+           name: conf-vol
+         - mountPath: /etc/mysql/my.cnf    
+           name: conf-file
+         ports:
+         - name: mysql
+           containerPort: 3306
+         env:
+         - name: MYSQL_ROOT_PASSWORD
+           value: "root123321"
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10;done"]
+

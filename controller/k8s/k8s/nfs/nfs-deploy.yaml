@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nfs    
+  name: nfs-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nfs    
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nfs    
+    spec:
+       nodeName: node1
+       volumes:
+       - name: export-vol
+         hostPath:
+           path: "/root/app/v02"
+           type: DirectoryOrCreate
+       containers:
+       - image: fuzzle/docker-nfs-server:latest 
+         name: nfs-c
+         securityContext:
+           privileged: true
+         volumeMounts:
+         - mountPath: /nfs                 
+           name: export-vol
+         ports:
+         - name: udp111
+           containerPort: 111 
+           protocol: UDP
+         - name: tcp111
+           containerPort: 111 
+           protocol: TCP
+         - name: udp2049
+           containerPort: 2049
+           protocol: UDP
+         - name: tcp2049
+           containerPort: 2049
+           protocol: TCP
+         - name: udp32765
+           containerPort: 32765
+           protocol: UDP
+         - name: tcp32765
+           containerPort: 32765
+           protocol: TCP
+         - name: udp32766
+           containerPort: 32766
+           protocol: UDP
+         - name: tcp32766
+           containerPort: 32766
+           protocol: TCP
+         - name: udp32767
+           containerPort: 32767
+           protocol: UDP
+         - name: tcp32767
+           containerPort: 32767
+           protocol: TCP
+         env:
+         - name: NFS_EXPORT_DIR_1   
+           value: "/nfs"
+         - name: NFS_EXPORT_DOMAIN_1 
+           value: "*"
+         - name: NFS_EXPORT_OPTIONS_1 
+           value: "rw,insecure,no_subtree_check,no_root_squash,fsid=1"
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10;done"]
+

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe</title>
+    <style>
+        #iframeTop{
+            width: 100%;
+            height: 15%;
+            background-color: #565656;
+        }
+        #iframeLeft{
+            width: 15%;
+            height: 763px;
+            float: left;
+            background-color: #ccc;
+        }
+        #iframeContent{
+            width: 84%;
+            height: 763px;
+            margin-left: 1%;
+            background-color: #fff;
+        }
+    </style>
+	<body>
+		<div>
+		    <iframe id="iframeTop" name="iframeTop" frameborder="0"></iframe>
+		    <iframe id="iframeLeft" name="iframeLeft" frameborder="0" src="view/left.html"></iframe>
+		    <iframe id="iframeContent" name="iframeContent" frameborder="0"></iframe>
+		</div>
+	</body>
+</html>
+

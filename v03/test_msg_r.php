@@ -1,6 +1,8 @@
 <?php
 namespace  v03 ;
-include './Msg_Class.php';
+
+//include '/usr/share/nginx/www/v03//Msg_Class.php';
+include 'Msg_Class.php';
 $msg = new  Msg();
 while(1)
 {

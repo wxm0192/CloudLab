@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: wehssh-dpl    
+  name: wehssh-dpl
+  namespace: product
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webssh 
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: webssh 
+    spec:
+       nodeName: master
+       shareProcessNamespace: true
+       containers:
+       - image: webssh-with-sshserver:0906-02
+         imagePullPolicy: IfNotPresent 
+         name: webss-c
+         ports:
+         - name: webssh
+           containerPort: 8888
+         #command: ["/bin/sh"]
+         #args: ["-c", "while true; do echo hello; sleep 10;done"]
+         command: ["/usr/bin/wssh"]
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10;done"]
+

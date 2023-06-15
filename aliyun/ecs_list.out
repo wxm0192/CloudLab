@@ -1,0 +1,8 @@
+InstanceId             | InstanceName            | PublicIpAddress.IpAddress | EipAddress.IpAddress | NetworkInterfaces.NetworkInterface[0].PrimaryIpAddress
+----------             | ------------            | ------------------------- | -------------------- | ------------------------------------------------------
+i-8vbe3bv3wz94d3xx7c2h | K8s-node02-62           | [8.142.176.49]            |                      | 172.30.2.62
+i-8vba9wwm9pu5sojtg7oc | K8s-node01-61           | [8.142.173.197]           |                      | 172.30.2.61
+i-8vbg54qynikpk03txrky | K8s-master-60           | [8.142.163.140]           |                      | 172.30.2.60
+i-8vb6lulg39p8fky7eya0 | Ali-VM02                | [39.99.153.25]            |                      | 172.30.2.172
+i-8vb6whjybmakura3386p | iZ8vb6whjybmakura3386pZ | [39.99.150.215]           |                      | 172.30.2.171
+

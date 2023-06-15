@@ -125,14 +125,14 @@
             <div class="flip" id="flip6">
                 <p class="title">
                 </p>
-                <a id="21" href="http://8.142.163.140:31656/v03/lab_term.php?lab_id=5" class="lab_td">全功能虚机自由实验</a>
+                <a id="21" href="http://8.142.163.140:31656/v03/lab_term.php?lab_id=35" class="lab_td">构建自己的Web网站</a>
             </div>
             <div id="seg">
 
             </div>
             <div class="panel" id="panel6"  style="background-color: aquamarine; font-size: 10px;">
-                <p>这是一个功能丰富的云端Linux实验平台 。 </p>
-                <p>通过该平台可以自由进行多种实验 。 </p>
+                <p>快速创建自己的Web 网站 </p>
+                <p> </p>
             </div>
 
         </div>

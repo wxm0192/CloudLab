@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx  
+  name: nginx-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx  
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nginx  
+    spec:
+       nodeName: master
+       shareProcessNamespace: true
+       volumes:
+        - name: www-vol
+          hostPath:
+            path: "/data/www"
+            type: DirectoryOrCreate
+        - name: conf-vol
+          hostPath:
+            path: "/data/nginx/conf.d/default.conf"
+            type: FileOrCreate
+        - name: log-vol
+          hostPath:
+            path: "/data/nginx/log"
+            type: DirectoryOrCreate
+       containers:
+       - image: nginx:latest
+         imagePullPolicy: IfNotPresent 
+         name: nginx-c
+         volumeMounts:
+         - mountPath: /usr/share/nginx/www
+           name: www-vol
+         - mountPath: /etc/nginx/conf.d/default.conf
+           name: conf-vol
+         - mountPath: /var/log/nginx
+           name: log-vol
+         ports:
+         - name: nginx
+           containerPort: 80  
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10;done"]
+

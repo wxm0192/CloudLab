@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ssh-server  
+  name: ssh-server-dpl
+#  namespace: product
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ssh-server
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: ssh-server
+    spec:
+#       nodeName: node1 
+       nodeName: master
+       shareProcessNamespace: true
+       volumes:
+       containers:
+       - image: my_web_ssh:22.1.31  
+         imagePullPolicy: IfNotPresent 
+         name: ssh-server-c
+         volumeMounts:
+         ports:
+         - name: ssh-server
+           containerPort: 22  
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 30;done"]
+

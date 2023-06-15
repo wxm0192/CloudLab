@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: nfs-svc
+  name: nfs-svc
+spec:
+  clusterIP: 10.102.161.60
+  ports:
+  - port: tcp111 
+    protocol: TCP
+    targetPort: tcp111
+  - port: udp111 
+    protocol: UDP
+    targetPort: udp111
+  - port: tcp2049 
+    protocol: TCP
+    targetPort: tcp2049
+  - port: udp2049 
+    protocol: UDP
+    targetPort: udp2049
+  - port: tcp32765 
+    protocol: TCP
+    targetPort: tcp32765
+  - port: udp32765 
+    protocol: UDP
+    targetPort: udp32765
+  - port: tcp32766 
+    protocol: TCP
+    targetPort: tcp32766
+  - port: udp32766 
+    protocol: UDP
+    targetPort: udp32766
+  - port: tcp32767 
+    protocol: TCP
+    targetPort: tcp32767
+  - port: udp32767 
+    protocol: UDP
+    targetPort: udp32767
+  selector:
+    app: nfs
+  type: ClusterIP

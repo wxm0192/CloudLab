@@ -1,0 +1,375 @@
+start to add a record <br>CMD is :  ssh root@172.20.0.1  " /root/aliyun/vm_lab_ctl.sh   new   m-8vb44jsfaspi40nx4y6t  0109  biz_net  172.30.2.193  60" usage : ./$0  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  m-8vb44jsfaspi40nx4y6t
+Tag :  0109
+Net_work :  :  biz_net
+IP_address :  :  172.30.2.193
+time_limit :  :  60
+/root/aliyun/vm_lab_ctl.sh new m-8vb44jsfaspi40nx4y6t 0109 biz_net 172.30.2.193  
+Start vm
+vm_start m-8vb44jsfaspi40nx4y6t 172.30.2.193 60 
+vm_start m-8vb44jsfaspi40nx4y6t 172.30.2.193 60
+This function to start the VM 
+m-8vb44jsfaspi40nx4y6t
+172.30.2.193
+This is the EID : "i-8vbevn6m2wjay13wi9wl"
+"Pending"
+1
+Creating ECS ...... 
+Creating ECS ...... 
+1
+Creating ECS ...... 
+Creating ECS ...... 
+{
+	"RequestId": "06CF7D0A-E4EF-5E83-903C-06CCDE08E25F"
+}
+1
+starting ECS ...... 
+starting ECS ...... 
+"Starting"
+1
+starting ECS ...... 
+starting ECS ...... 
+"Starting"
+1
+starting ECS ...... 
+starting ECS ...... 
+"Running"
+"Running"
+{
+	"RequestId": "C518DDDF-68FD-584E-BC10-E54275274E98"
+}
+"39.98.124.217"
+setting autorelease time 
+./aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vbevn6m2wjay13wi9wl" --AutoReleaseTime=2022-05-08T03:15:08Z
+{
+	"RequestId": "D39FB25A-E635-5722-BCA7-0B271D4527CA"
+}
+{
+	"InstanceStatuses": {
+		"InstanceStatus": [
+			{
+				"InstanceId": "i-8vbevn6m2wjay13wi9wl",
+				"Status": "Running"
+			},
+			{
+				"InstanceId": "i-8vbizl96uvr5ksb7hls5",
+				"Status": "Running"
+			},
+			{
+				"InstanceId": "i-8vb6lulg39p8fky7eya0",
+				"Status": "Running"
+			},
+			{
+				"InstanceId": "i-8vb6whjybmakura3386p",
+				"Status": "Running"
+			}
+		]
+	},
+	"PageNumber": 1,
+	"PageSize": 10,
+	"RequestId": "9E5A0C6D-6CBD-51AD-BFA7-B70D921722BC",
+	"TotalCount": 4
+}
+InstanceId             | InstanceName            | PublicIpAddress.IpAddress | EipAddress.IpAddress | NetworkInterfaces.NetworkInterface[0].PrimaryIpAddress
+----------             | ------------            | ------------------------- | -------------------- | ------------------------------------------------------
+i-8vbevn6m2wjay13wi9wl | Lab-vm03                | [39.98.124.217]           |                      | 172.30.2.193
+i-8vbizl96uvr5ksb7hls5 | Lab-vm03                | [8.142.185.184]           |                      | 172.30.2.192
+i-8vb6lulg39p8fky7eya0 | Ali-VM02                | [39.99.153.25]            |                      | 172.30.2.172
+i-8vb6whjybmakura3386p | iZ8vb6whjybmakura3386pZ | [39.99.150.215]           |                      | 172.30.2.171
+
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 102 , 4 , 172.30.2.193 <br> <br> Failed to find the required record  : 102 , 4 , 172.30.2.193 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/aliyun/vm_lab_ctl.sh   del   m-8vb44jsfaspi40nx4y6t  0109  biz_net  172.30.2.193  60" usage : ./$0  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  m-8vb44jsfaspi40nx4y6t
+Tag :  0109
+Net_work :  :  biz_net
+IP_address :  :  172.30.2.193
+time_limit :  :  60
+/root/aliyun/vm_lab_ctl.sh del m-8vb44jsfaspi40nx4y6t 0109 biz_net 172.30.2.193  
+Del vm
+vm_stop  m-8vb44jsfaspi40nx4y6t 172.30.2.193  
+vm_stop m-8vb44jsfaspi40nx4y6t 172.30.2.193
+i-8vbevn6m2wjay13wi9wl
+"i-8vbevn6m2wjay13wi9wl"
+{
+	"RequestId": "4C0478C9-D10A-5FC2-867F-D0C269DD3524"
+}
+1
+stopping  ECS ...... 
+"Stopping"
+1
+stopping  ECS ...... 
+"Stopped"
+"i-8vbevn6m2wjay13wi9wl",
+[1;31mERROR: SDK.ServerError
+ErrorCode: IncorrectInstanceStatus.Initializing
+Recommend: https://troubleshoot.api.aliyun.com?q=IncorrectInstanceStatus.Initializing&product=Ecs
+RequestId: 007A600D-4D7C-5366-866D-17D548958289
+Message: You cannot operate this action cause ecs (i-8vbevn6m2wjay13wi9wl) is creating
+[0m./aliyun ecs DeleteInstances --InstanceId.1="i-8vbevn6m2wjay13wi9wl"
+The checking string is:"i-8vbevn6m2wjay13wi9wl",
+"i-8vbevn6m2wjay13wi9wl",
+[1;31mERROR: SDK.ServerError
+ErrorCode: IncorrectInstanceStatus.Initializing
+Recommend: https://troubleshoot.api.aliyun.com?q=IncorrectInstanceStatus.Initializing&product=Ecs
+RequestId: 1169A853-54A8-5CE5-ACDD-D973562368FE
+Message: You cannot operate this action cause ecs (i-8vbevn6m2wjay13wi9wl) is creating
+[0m./aliyun ecs DeleteInstances --InstanceId.1="i-8vbevn6m2wjay13wi9wl"
+The checking string is:"i-8vbevn6m2wjay13wi9wl",
+"i-8vbevn6m2wjay13wi9wl",
+{
+	"RequestId": "9BE27DF5-DA15-5001-AC6D-8C5265EF31A3"
+}
+./aliyun ecs DeleteInstances --InstanceId.1="i-8vbevn6m2wjay13wi9wl"
+The checking string is:"i-8vbevn6m2wjay13wi9wl",
+
+No requested ECS
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   my_web_ssh  22.1.31  biz_net  169.10.0.7" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.7
+/root/app/controller/docker-lab-start.sh new my_web_ssh 22.1.31 biz_net 169.10.0.7  
+STRING is not empty
+994e936507cf 169.10.0.7
+This is the running docker :  994e936507cf
+docker stop 994e936507cf
+994e936507cf
+9c5e9f39a9108f05ae1cc4cea054c0546265cf710a4fb32460e7e1bdbe59581e
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 1 , 5 , 169.10.0.7 <br> <br> Failed to find the required record  : 1 , 5 , 169.10.0.7 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   my_web_ssh  22.1.31  biz_net  169.10.0.7" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.7
+/root/app/controller/docker-lab-start.sh del my_web_ssh 22.1.31 biz_net 169.10.0.7  
+STRING is not empty
+9c5e9f39a910 169.10.0.7
+This is the running docker :  9c5e9f39a910
+docker stop 9c5e9f39a910
+9c5e9f39a910
+ docker 9c5e9f39a910 deleted
+<br>system return:0<br>system out :Runningreleased the lab env start to add a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   my_web_ssh  22.1.31  biz_net  169.10.0.7" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.7
+/root/app/controller/docker-lab-start.sh new my_web_ssh 22.1.31 biz_net 169.10.0.7  
+STRING is empty
+84439f0ec1badd76946d4df6c4cc0c2a31d2dc36276e05891b7a8fe7876bba6e
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 1 , 5 , 169.10.0.7 <br> <br> Failed to find the required record  : 1 , 5 , 169.10.0.7 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   my_web_ssh  22.1.31  biz_net  169.10.0.7" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.7
+/root/app/controller/docker-lab-start.sh del my_web_ssh 22.1.31 biz_net 169.10.0.7  
+STRING is not empty
+84439f0ec1ba 169.10.0.7
+This is the running docker :  84439f0ec1ba
+docker stop 84439f0ec1ba
+84439f0ec1ba
+ docker 84439f0ec1ba deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   my_web_ssh  22.1.31  biz_net  169.10.0.3" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.3
+/root/app/controller/docker-lab-start.sh new my_web_ssh 22.1.31 biz_net 169.10.0.3  
+STRING is empty
+3797127a799619af68adc872260ff11555e4c34380c433e4c1dfdbe66ba2a6d2
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 1 , 1 , 169.10.0.3 <br> <br> Failed to find the required record  : 1 , 1 , 169.10.0.3 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   my_web_ssh  22.1.31  biz_net  169.10.0.3" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.3
+/root/app/controller/docker-lab-start.sh del my_web_ssh 22.1.31 biz_net 169.10.0.3  
+STRING is not empty
+3797127a7996 169.10.0.3
+This is the running docker :  3797127a7996
+docker stop 3797127a7996
+3797127a7996
+ docker 3797127a7996 deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   lab_redis  22.1.31  biz_net  169.10.0.150" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.150
+/root/app/controller/docker-lab-start.sh new lab_redis 22.1.31 biz_net 169.10.0.150  
+STRING is empty
+b632fc6554d6553de525fc085df6216827383da8714971f236a8479bb2eb8c4e
+<br>system return:0<br>system out :Running<br> found and updated   : 31:1:169.10.0.150:Running
+ <br> <br>Update status : 31:1:169.10.0.150:Running
+finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   lab_redis  22.1.31  biz_net  169.10.0.150" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.150
+/root/app/controller/docker-lab-start.sh del lab_redis 22.1.31 biz_net 169.10.0.150  
+STRING is not empty
+b632fc6554d6 169.10.0.150
+This is the running docker :  b632fc6554d6
+docker stop b632fc6554d6
+b632fc6554d6
+ docker b632fc6554d6 deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   lab_redis  22.1.31  biz_net  169.10.0.150" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.150
+/root/app/controller/docker-lab-start.sh new lab_redis 22.1.31 biz_net 169.10.0.150  
+STRING is empty
+dd4d66da439c975e81d94350c1602f07200f04d1340d5445b017f3bfef51e81f
+<br>system return:0<br>system out :Running<br> found and updated   : 31:1:169.10.0.150:Running
+ <br> <br>Update status : 31:1:169.10.0.150:Running
+finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   lab_redis  22.1.31  biz_net  169.10.0.150" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.150
+/root/app/controller/docker-lab-start.sh del lab_redis 22.1.31 biz_net 169.10.0.150  
+STRING is not empty
+dd4d66da439c 169.10.0.150
+This is the running docker :  dd4d66da439c
+docker stop dd4d66da439c
+dd4d66da439c
+ docker dd4d66da439c deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   lab_redis  22.1.31  biz_net  169.10.0.151" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.151
+/root/app/controller/docker-lab-start.sh new lab_redis 22.1.31 biz_net 169.10.0.151  
+STRING is empty
+1f98b68d52fdec6c507c9b91266e1d56a94ba2ec922781f39e0f9f4979f25638
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 31 , 2 , 169.10.0.151 <br> <br> Failed to find the required record  : 31 , 2 , 169.10.0.151 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   lab_redis  22.1.31  biz_net  169.10.0.151" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.151
+/root/app/controller/docker-lab-start.sh del lab_redis 22.1.31 biz_net 169.10.0.151  
+STRING is not empty
+1f98b68d52fd 169.10.0.151
+This is the running docker :  1f98b68d52fd
+docker stop 1f98b68d52fd
+1f98b68d52fd
+ docker 1f98b68d52fd deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   lab_redis  22.1.31  biz_net  169.10.0.150" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  lab_redis
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.150
+/root/app/controller/docker-lab-start.sh new lab_redis 22.1.31 biz_net 169.10.0.150  
+STRING is not empty
+db93771be1bb 169.10.0.150
+This is the running docker :  db93771be1bb
+docker stop db93771be1bb
+db93771be1bb
+56205c2e07f198f8840f58c7ec6d7c1d330e085f9258fef4d6b6d088602834e7
+<br>system return:0<br>system out :Running<br> found and updated   : 31:1:169.10.0.150:Running
+ <br> <br>Update status : 31:1:169.10.0.150:Running
+finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   new   my_web_ssh  22.1.31  biz_net  169.10.0.3" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.3
+/root/app/controller/docker-lab-start.sh new my_web_ssh 22.1.31 biz_net 169.10.0.3  
+STRING is empty
+19a171c562bd30a8bdbae6f01c564e42300c70f3b544f9593757c3dc5daac87a
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 1 , 1 , 169.10.0.3 <br> <br> Failed to find the required record  : 1 , 1 , 169.10.0.3 <br> <br>Update status : -1finished  to update a record <br>CMD is :  ssh root@172.20.0.1  " /root/app/controller/docker-lab-start.sh   del   my_web_ssh  22.1.31  biz_net  169.10.0.3" usage : ./docker-lab-start.sh  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  del
+image name :  my_web_ssh
+Tag :  22.1.31
+Net_work :  :  biz_net
+IP_address :  :  169.10.0.3
+/root/app/controller/docker-lab-start.sh del my_web_ssh 22.1.31 biz_net 169.10.0.3  
+STRING is not empty
+58479913ac2a 169.10.0.3
+This is the running docker :  58479913ac2a
+docker stop 58479913ac2a
+58479913ac2a
+ docker 58479913ac2a deleted
+<br>system return:0<br>system out :Runningreleased the lab env CMD is :  ssh root@172.20.0.1  " /root/aliyun/vm_lab_ctl.sh   new   m-8vb44jsfaspi40nx4y6t  0109  biz_net  172.30.2.190  60" usage : ./$0  $Operation_type $Images-name  $Tag   $Net_work $IP 
+Operation_Type (new: Create a lab ; del : delete a lab ) :  new
+image name :  m-8vb44jsfaspi40nx4y6t
+Tag :  0109
+Net_work :  :  biz_net
+IP_address :  :  172.30.2.190
+time_limit :  :  60
+/root/aliyun/vm_lab_ctl.sh new m-8vb44jsfaspi40nx4y6t 0109 biz_net 172.30.2.190  
+Start vm
+vm_start m-8vb44jsfaspi40nx4y6t 172.30.2.190 60 
+vm_start m-8vb44jsfaspi40nx4y6t 172.30.2.190 60
+This function to start the VM 
+m-8vb44jsfaspi40nx4y6t
+172.30.2.190
+This is the EID : "i-8vb50awyozzchud62l25"
+"Pending"
+1
+Creating ECS ...... 
+Creating ECS ...... 
+1
+Creating ECS ...... 
+Creating ECS ...... 
+{
+	"RequestId": "AC22CE02-8D01-5AFD-8FE0-8A34A973893F"
+}
+1
+starting ECS ...... 
+starting ECS ...... 
+"Starting"
+1
+starting ECS ...... 
+starting ECS ...... 
+"Running"
+"Running"
+{
+	"RequestId": "04045F08-2916-583F-B8F8-EFADA3CBDD28"
+}
+"8.142.6.151"
+setting autorelease time 
+./aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb50awyozzchud62l25" --AutoReleaseTime=2022-05-08T05:25:30Z
+{
+	"RequestId": "E3566041-3DD8-5607-BA2C-EDA597899EE5"
+}
+{
+	"InstanceStatuses": {
+		"InstanceStatus": [
+			{
+				"InstanceId": "i-8vb50awyozzchud62l25",
+				"Status": "Running"
+			},
+			{
+				"InstanceId": "i-8vb6lulg39p8fky7eya0",
+				"Status": "Running"
+			},
+			{
+				"InstanceId": "i-8vb6whjybmakura3386p",
+				"Status": "Running"
+			}
+		]
+	},
+	"PageNumber": 1,
+	"PageSize": 10,
+	"RequestId": "13D1CC47-D268-523D-985A-7A1F4C198A9D",
+	"TotalCount": 3
+}
+InstanceId             | InstanceName            | PublicIpAddress.IpAddress | EipAddress.IpAddress | NetworkInterfaces.NetworkInterface[0].PrimaryIpAddress
+----------             | ------------            | ------------------------- | -------------------- | ------------------------------------------------------
+i-8vb50awyozzchud62l25 | Lab-vm03                | [8.142.6.151]             |                      | 172.30.2.190
+i-8vb6lulg39p8fky7eya0 | Ali-VM02                | [39.99.153.25]            |                      | 172.30.2.172
+i-8vb6whjybmakura3386p | iZ8vb6whjybmakura3386pZ | [39.99.150.215]           |                      | 172.30.2.171
+
+<br>system return:0<br>system out :Running<br> Failed to find the required record  : 102 , 1 , 172.30.2.190 <br> <br> Failed to find the required record  : 102 , 1 , 172.30.2.190 <br> <br>Update status : -1finished  to update a record <br>

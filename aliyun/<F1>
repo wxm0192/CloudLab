@@ -1,0 +1,4 @@
+while [ "$status" != \"Running\" ]   
+do   
+	echo 1  ;
+done

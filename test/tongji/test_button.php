@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div{position:relative;}
+    button{
+        position:absolute;
+        right:5;
+        bottom:5;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <form>
+<!--其他表单代码-->
+            <button>右下角按钮</button>
+        </form>
+    </div>
+</body>
+</html>

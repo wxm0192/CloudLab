@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe</title>
+    <link rel="stylesheet" href="iframe-drag.css">
+    <style>
+        .head {
+            color: rgb(223, 228, 232);
+            font-size: 20px;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+	<script type="text/javascript" src="jquery.js" charset="utf-8" > </script>
+        <script  type="text/javascript"  src="resize.js"  charset="utf-8"></script>
+	-->
+    <div>
+        <div id="iframeTop">
+            <p>
+                <span class="head">
+                    测试文字
+                </span>
+                <span class="head">
+                    测试分隔符
+                </span>
+            <div class="head">
+                云上实验室
+            </div>
+            </p>
+        </div>
+        <iframe id="iframeLeft" name="iframeLeft" frameborder="0" src="left01.html"></iframe>
+        <img id="seg" name="seg" src="seg.png" />
+        <iframe id="iframeContent" name="iframeContent" frameborder="0"></iframe>
+        <!--
+		    <iframe id="iframeContent" name="iframeContent" frameborder="0"></iframe>
+		-->
+    </div>
+    <script type="text/javascript" src="iframe-drag.js">
+    </script>
+    <script>
+        var div03 = document.getElementById("iframeContent");
+        //div03.src = "https://www.w3school.com.cn/";
+
+        <?php
+        //$lab_id = $_GET['lab_id'];
+        session_id();
+        session_start();
+        ?> 
+        var lab_id = <?php echo $_SESSION['lab_id'];         ?> ;
+        if (lab_id == 0) {
+            lab_id = 3;
+        }
+        //var lab_id = 2;
+        div03.src = "http://8.142.163.140:31656/MySQL/create_lab_env/test02-5-2.php?lab_id=" + lab_id;
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+{
+	"ClusterId": "",
+	"Cpu": 1,
+	"CreationTime": "2021-11-11T02:07:15Z",
+	"CreditSpecification": "",
+	"DedicatedHostAttribute": {
+		"DedicatedHostId": "",
+		"DedicatedHostName": ""
+	},
+	"Description": "",
+	"EipAddress": {
+		"AllocationId": "",
+		"InternetChargeType": "",
+		"IpAddress": ""
+	},
+	"ExpiredTime": "2099-12-31T15:59Z",
+	"HostName": "iZ8vbc5lhgtc55hya7zuvqZ",
+	"ImageId": "m-8vbc0b59ttsucn9qfvxf",
+	"InnerIpAddress": {
+		"IpAddress": []
+	},
+	"InstanceChargeType": "PostPaid",
+	"InstanceId": "i-8vbc5lhgtc55hya7zuvq",
+	"InstanceName": "Lab-vm03",
+	"InstanceNetworkType": "vpc",
+	"InstanceType": "ecs.s6-c1m2.small",
+	"InternetChargeType": "PayByTraffic",
+	"InternetMaxBandwidthIn": 0,
+	"InternetMaxBandwidthOut": 0,
+	"IoOptimized": "optimized",
+	"Memory": 2048,
+	"OperationLocks": {
+		"LockReason": []
+	},
+	"PublicIpAddress": {
+		"IpAddress": []
+	},
+	"RegionId": "cn-zhangjiakou",
+	"RequestId": "0A75A403-2732-59CB-9B94-D5A37C6C529D",
+	"SecurityGroupIds": {
+		"SecurityGroupId": [
+			"sg-8vb87jnn7iq7gzp6d01q"
+		]
+	},
+	"SerialNumber": "5229e231-c9e4-4487-8eb4-3d91325d077a",
+	"Status": "Stopped",
+	"StoppedMode": "KeepCharging",
+	"VlanId": "",
+	"VpcAttributes": {
+		"NatIpAddress": "",
+		"PrivateIpAddress": {
+			"IpAddress": [
+				"172.30.2.176"
+			]
+		},
+		"VSwitchId": "vsw-8vbn0qdm4x187nnxcjadp",
+		"VpcId": "vpc-8vbnw6ctxc4bytuozzv3m"
+	},
+	"ZoneId": "cn-zhangjiakou-b"
+}

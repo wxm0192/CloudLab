@@ -123,6 +123,7 @@
                 var redo_counter = 0;
                 var counter = document.getElementById("counter");
                 var session_ip;
+                var session_public_ip;
                 var term_url;
                 var lab_ready = 0;
                 var lab_exit = 0;
@@ -208,6 +209,29 @@
 			lab_exit = 1 ;
                 }
 
+                function get_session_public_ip() {
+
+                        var session_ip;
+                        // 创建 XMLHttpRequest 对象
+                        var request = new XMLHttpRequest();
+                        var term_url;
+                        // 实例化请求对象
+                        request.onreadystatechange = function () {
+                                if (this.readyState === 4 && this.status === 200) {
+                                        session_public_ip = this.responseText;
+                                        console.log(session_public_ip);
+                                        if (is_ip(session_public_ip)) {
+						var p_ip = document.getElementById("p_ip");
+						p_ip.innerHTML = session_public_ip ;
+						
+                                        }
+                                }
+                        };
+                        request.open("GET", "http://8.142.163.140:31656/v03/get_session_public_ip.php");
+                        request.setRequestHeader("If-Modified-Since", "0");
+                        request.setRequestHeader("Cache-Control", "no-cache");
+                        request.send();
+                }
 
                 function get_session_ip() {
 
@@ -318,8 +342,10 @@
                 setTimeout(show_lab_remain_time , 1000);
 		
                	console.log("lab_release_time:"+lab_release_time );
+                setTimeout(get_session_public_ip , 4000);
                 //setTimeout(release_lab, lab_release_time);
         //check_ip();
+
         </script>
 </body>
 

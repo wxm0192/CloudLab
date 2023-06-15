@@ -1,0 +1,88 @@
+                /***        *{padding:0px;margin:0px;border: } ***/
+                * {
+                        border: 0px;
+                        padding: 0px;
+                }
+
+                html,
+                body {
+                        width: 100%;
+                        height: 100%;
+                }
+
+                #iframeTop {
+                        width: 100%;
+                        height: 15%;
+                        left: 0px;
+                        top: 0px;
+                        background-color: #565656;
+                        position: absolute;
+                        z-index: 3;
+                }
+
+                #top-content {
+                        margin-left: 0px;
+                        margin-top:0px;
+			padding-left: 20px;
+			padding-top : 5px;
+                        background-color: #565656;
+                        color: white ;
+                        z-index: 3;
+			font-size: 12px;
+                }
+
+                #btn01 {
+                        position: absolute;
+                        right:  20px;
+                        top:  20px;
+		}
+
+
+                #li {
+                        height: 85%;
+                        border: 0;
+                        position: absolute;
+                        left: 0px;
+                        top: 15%;
+                        z-index: 1;
+                        border: 1px solid;
+                }
+
+                #ri {
+                        height: 85%;
+                        border: thick;
+                        position: absolute;
+                        right: 0px;
+                        top: 15%;
+                        z-index: 1;
+                        border: 1px solid;
+                }
+
+                #s {
+                        height: 85%;
+                        position: absolute;
+                        z-index: 3;
+                        cursor: move;
+                        top: 15%;
+                }
+
+                #s-img {
+                        height: 85%;
+                        top: 10%;
+                        z-index: 1;
+                        position: absolute;
+                }
+
+                #drag {
+                        height: 85%;
+                        width: 100%;
+                        top: 10%;
+                        position: absolute;
+                        z-index: 2;
+                        margin-left: 0px;
+                        padding: 0px;
+                        filter: alpha(opacity=0);
+                        opacity: 0;
+                        background-color: #fee;
+
+                }

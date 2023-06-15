@@ -1,0 +1,107 @@
+{
+    "kind": "Pod",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "my-web-ssh-server01",
+        "namespace": "default",
+        "selfLink": "/api/v1/namespaces/default/pods/my-web-ssh-server01",
+        "uid": "39e8c9c3-a041-431f-973d-e75669e98129",
+        "resourceVersion": "25916895",
+        "creationTimestamp": "2022-11-29T03:14:44Z",
+        "labels": {
+            "run": "my-web-ssh-server01"
+        },
+        "managedFields": [
+            {
+                "manager": "kubectl-run",
+                "operation": "Update",
+                "apiVersion": "v1",
+                "time": "2022-11-29T03:14:44Z",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:metadata": {
+                        "f:labels": {
+                            ".": {},
+                            "f:run": {}
+                        }
+                    },
+                    "f:spec": {
+                        "f:containers": {
+                            "k:{\"name\":\"my-web-ssh-server01\"}": {
+                                ".": {},
+                                "f:image": {},
+                                "f:imagePullPolicy": {},
+                                "f:name": {},
+                                "f:resources": {},
+                                "f:terminationMessagePath": {},
+                                "f:terminationMessagePolicy": {}
+                            }
+                        },
+                        "f:dnsPolicy": {},
+                        "f:enableServiceLinks": {},
+                        "f:restartPolicy": {},
+                        "f:schedulerName": {},
+                        "f:securityContext": {},
+                        "f:terminationGracePeriodSeconds": {}
+                    }
+                }
+            }
+        ]
+    },
+    "spec": {
+        "volumes": [
+            {
+                "name": "default-token-k27kh",
+                "secret": {
+                    "secretName": "default-token-k27kh",
+                    "defaultMode": 420
+                }
+            }
+        ],
+        "containers": [
+            {
+                "name": "my-web-ssh-server01",
+                "image": "my_web_ssh:22.1.31",
+                "resources": {},
+                "volumeMounts": [
+                    {
+                        "name": "default-token-k27kh",
+                        "readOnly": true,
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+                    }
+                ],
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "imagePullPolicy": "IfNotPresent"
+            }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "ClusterFirst",
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "securityContext": {},
+        "schedulerName": "default-scheduler",
+        "tolerations": [
+            {
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "effect": "NoExecute",
+                "tolerationSeconds": 300
+            },
+            {
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "effect": "NoExecute",
+                "tolerationSeconds": 300
+            }
+        ],
+        "priority": 0,
+        "enableServiceLinks": true,
+        "preemptionPolicy": "PreemptLowerPriority"
+    },
+    "status": {
+        "phase": "Pending",
+        "qosClass": "BestEffort"
+    }
+}

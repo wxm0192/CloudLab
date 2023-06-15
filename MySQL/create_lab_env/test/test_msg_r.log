@@ -11824,3 +11824,639 @@ Array
     [103] => 
     [104] => No requested ECS
 )
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-3-1
+Array
+(
+    [0] => labvm-3-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-3-1 30
+Array
+(
+    [0] => labvm-3-1
+    [1] => "i-8vb8zwhieiks0i8fsjdf"
+    [2] => "i-8vb8zwhieiks0i8fsjdf"
+    [3] => This is the EID : "i-8vb8zwhieiks0i8fsjdf"
+    [4] => "Stopped"
+    [5] => {"RequestId":"40EB3744-9125-5AF0-8B19-3B52ADFEC8E6"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vb8zwhieiks0i8fsjdf":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Starting"
+    [15] => "i-8vb8zwhieiks0i8fsjdf":"Starting"
+    [16] => 1
+    [17] => starting ECS ......
+    [18] => starting ECS ......
+    [19] => "Running"
+    [20] => "i-8vb8zwhieiks0i8fsjdf":"Running"
+    [21] => "Running"
+    [22] => {"RequestId":"B8622437-16D7-5F68-80B1-2E790CA8EA3E"}
+    [23] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vb8zwhieiks0i8fsjdf" | sh
+    [24] => "39.98.58.97"
+    [25] => setting autorelease time
+    [26] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb8zwhieiks0i8fsjdf" --AutoReleaseTime=2023-04-02T04:09:10Z
+    [27] => {"RequestId":"0E6C389B-9609-55D5-91BB-14B6449E2B84"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-3-1
+Array
+(
+    [0] => "labvm-3-1"
+    [1] => "i-8vb8zwhieiks0i8fsjdf"
+    [2] => {"RequestId":"7E6F6E96-2831-54F3-BA30-D4ABCF1328AE"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vb8zwhieiks0i8fsjdf":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vb8zwhieiks0i8fsjdf":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"FB5A12CA-F4C0-549D-9F48-BF67D71F60EA","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb8zwhieiks0i8fsjdf"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => {"RequestId":"2E103B23-D885-5BE8-AC25-3FD366684DC2"}
+    [13] => aliyun ecs DeleteInstance --InstanceId "i-8vb8zwhieiks0i8fsjdf"
+    [14] => The checking string is:{"TotalCount":6,"RequestId":"FB5A12CA-F4C0-549D-9F48-BF67D71F60EA","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb8zwhieiks0i8fsjdf"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [15] => 
+    [16] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-3-1
+Array
+(
+    [0] => labvm-3-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-3-1 30
+Array
+(
+    [0] => labvm-3-1
+    [1] => "i-8vba3n779o633v16e4h3"
+    [2] => "i-8vba3n779o633v16e4h3"
+    [3] => This is the EID : "i-8vba3n779o633v16e4h3"
+    [4] => "Stopped"
+    [5] => {"RequestId":"FE3C7737-B463-5439-B4F9-AC172AC79B96"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vba3n779o633v16e4h3":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Running"
+    [15] => "i-8vba3n779o633v16e4h3":"Running"
+    [16] => "Running"
+    [17] => {"RequestId":"4821605E-591D-528E-8012-C744048E62F1"}
+    [18] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vba3n779o633v16e4h3" | sh
+    [19] => "39.98.224.169"
+    [20] => setting autorelease time
+    [21] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vba3n779o633v16e4h3" --AutoReleaseTime=2023-04-02T04:31:30Z
+    [22] => {"RequestId":"FA6A1C50-3A2A-5C68-BFAE-F166F2DE0DB8"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-3-1
+Array
+(
+    [0] => "labvm-3-1"
+    [1] => "i-8vba3n779o633v16e4h3"
+    [2] => {"RequestId":"51694994-3C1D-5851-B5C5-F0EDAB27FF76"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vba3n779o633v16e4h3":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vba3n779o633v16e4h3":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"82E9B8E8-481F-5C66-8622-5AE3ABD8E719","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vba3n779o633v16e4h3"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => {"RequestId":"2A44CD39-AA85-5013-B822-33C7B461D215"}
+    [13] => aliyun ecs DeleteInstance --InstanceId "i-8vba3n779o633v16e4h3"
+    [14] => The checking string is:{"TotalCount":6,"RequestId":"82E9B8E8-481F-5C66-8622-5AE3ABD8E719","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vba3n779o633v16e4h3"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [15] => 
+    [16] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh my_web_ssh 22.1.31 labpod-1-1
+Error from server (NotFound): pods "labpod-1-1" not found
+Array
+(
+    [0] => pod/labpod-1-1 created
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_delete.sh labpod-1-1
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+Array
+(
+    [0] => pod "labpod-1-1" force deleted
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh my_web_ssh 22.1.31 labpod-1-1
+Error from server (NotFound): pods "labpod-1-1" not found
+Array
+(
+    [0] => pod/labpod-1-1 created
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_delete.sh labpod-1-1
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+Array
+(
+    [0] => pod "labpod-1-1" force deleted
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-3-1
+Array
+(
+    [0] => labvm-3-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-3-1 30
+parse error: Invalid numeric literal at line 1, column 2
+Array
+(
+    [0] => labvm-3-1
+    [1] => "i-8vb1ngp61d8jm7wa271s"
+    [2] => "i-8vb1ngp61d8jm7wa271s"
+    [3] => This is the EID : "i-8vb1ngp61d8jm7wa271s"
+    [4] => "Stopped"
+    [5] => {"RequestId":"8BBA112E-AEB1-5D1E-A188-C72FD6F51C03"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vb1ngp61d8jm7wa271s":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Running"
+    [15] => "i-8vb1ngp61d8jm7wa271s":"Running"
+    [16] => "Running"
+    [17] => [1;31mERROR: SDK.ServerError
+    [18] => ErrorCode: InvalidInstanceId.NotFound
+    [19] => Recommend: https://next.api.aliyun.com/troubleshoot?q=InvalidInstanceId.NotFound&product=Ecs
+    [20] => RequestId: 497B0EC1-42A4-53C1-AB33-118693D0D600
+    [21] => Message: The specified InstanceId does not exist.
+    [22] => [0maliyun ecs AllocatePublicIpAddress --InstanceId="i-8vb1ngp61d8jm7wa271s" | sh
+    [23] => setting autorelease time
+    [24] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb1ngp61d8jm7wa271s" --AutoReleaseTime=2023-04-02T04:51:18Z
+    [25] => [1;31mERROR: SDK.ServerError
+    [26] => ErrorCode: NoSuchResource
+    [27] => Recommend: https://next.api.aliyun.com/troubleshoot?q=NoSuchResource&product=Ecs
+    [28] => RequestId: 432FE003-6E30-5A1B-86CF-FADE71F72E2C
+    [29] => Message: The specified resource is not found.
+    [30] => [0m
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-3-1
+Array
+(
+    [0] => "labvm-3-1"
+    [1] => "i-8vb1ngp61d8jm7wa271s"
+    [2] => {"RequestId":"2F1CF55C-A4DC-5A12-A52E-871E5E2B1CC6"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vb1ngp61d8jm7wa271s":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vb1ngp61d8jm7wa271s":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"98BD1078-37ED-51D6-9E38-81AE2E3D3E68","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb1ngp61d8jm7wa271s"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => {"RequestId":"CDA001B7-E71A-5F90-A0BA-62D40F454F63"}
+    [13] => aliyun ecs DeleteInstance --InstanceId "i-8vb1ngp61d8jm7wa271s"
+    [14] => The checking string is:{"TotalCount":6,"RequestId":"98BD1078-37ED-51D6-9E38-81AE2E3D3E68","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb1ngp61d8jm7wa271s"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [15] => 
+    [16] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-3-1
+Array
+(
+    [0] => labvm-3-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-3-1 30
+Array
+(
+    [0] => labvm-3-1
+    [1] => "i-8vbhh2dmch70alro0dzv"
+    [2] => "i-8vbhh2dmch70alro0dzv"
+    [3] => This is the EID : "i-8vbhh2dmch70alro0dzv"
+    [4] => "Pending"
+    [5] => 1
+    [6] => Creating ECS ......
+    [7] => Creating ECS ......
+    [8] => "i-8vbhh2dmch70alro0dzv":"Stopped"
+    [9] => {"RequestId":"43A18A0F-DF1C-54C4-B767-6D2513AB0DF0"}
+    [10] => 1
+    [11] => starting ECS ......
+    [12] => starting ECS ......
+    [13] => "Starting"
+    [14] => "i-8vbhh2dmch70alro0dzv":"Starting"
+    [15] => 1
+    [16] => starting ECS ......
+    [17] => starting ECS ......
+    [18] => "Running"
+    [19] => "i-8vbhh2dmch70alro0dzv":"Running"
+    [20] => "Running"
+    [21] => {"RequestId":"15D4812A-A00D-5430-BD47-E57DDC95344C"}
+    [22] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vbhh2dmch70alro0dzv" | sh
+    [23] => "47.92.235.40"
+    [24] => setting autorelease time
+    [25] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vbhh2dmch70alro0dzv" --AutoReleaseTime=2023-04-02T04:54:48Z
+    [26] => {"RequestId":"8CB4BF47-2211-58E3-AC38-E0FC4F1427BB"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-3-1
+Array
+(
+    [0] => "labvm-3-1"
+    [1] => "i-8vbhh2dmch70alro0dzv"
+    [2] => {"RequestId":"75EC1ED4-7712-5B06-81C0-5FFADEE16585"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vbhh2dmch70alro0dzv":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vbhh2dmch70alro0dzv":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"B36E02F5-3C3F-5763-A337-CE0796BB1142","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbhh2dmch70alro0dzv"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => {"RequestId":"5799B052-2C17-5EB1-A3A0-25D8F2DEDD0D"}
+    [13] => aliyun ecs DeleteInstance --InstanceId "i-8vbhh2dmch70alro0dzv"
+    [14] => The checking string is:{"TotalCount":6,"RequestId":"B36E02F5-3C3F-5763-A337-CE0796BB1142","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbhh2dmch70alro0dzv"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [15] => 
+    [16] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-3-1
+Array
+(
+    [0] => labvm-3-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-3-1 30
+Array
+(
+    [0] => labvm-3-1
+    [1] => "i-8vb9pl7tdsljvuvjn12v"
+    [2] => "i-8vb9pl7tdsljvuvjn12v"
+    [3] => This is the EID : "i-8vb9pl7tdsljvuvjn12v"
+    [4] => "Stopped"
+    [5] => {"RequestId":"DE04FB28-EDAB-5AD6-836D-8C6D2F7F4116"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vb9pl7tdsljvuvjn12v":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Running"
+    [15] => "i-8vb9pl7tdsljvuvjn12v":"Running"
+    [16] => "Running"
+    [17] => {"RequestId":"628518FC-6DB7-53DB-BAC5-C03BA2344A1E"}
+    [18] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vb9pl7tdsljvuvjn12v" | sh
+    [19] => "39.98.220.153"
+    [20] => setting autorelease time
+    [21] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb9pl7tdsljvuvjn12v" --AutoReleaseTime=2023-04-02T04:58:32Z
+    [22] => {"RequestId":"BA4301B9-E945-5E2F-A711-7A9B969A36CE"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-3-1
+Array
+(
+    [0] => "labvm-3-1"
+    [1] => "i-8vb9pl7tdsljvuvjn12v"
+    [2] => {"RequestId":"7EEDDB27-2B7B-5AFC-A759-581EA9EB47A8"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vb9pl7tdsljvuvjn12v":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vb9pl7tdsljvuvjn12v":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"31B93463-9CDC-55DF-9C68-9308A98221AF","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb9pl7tdsljvuvjn12v"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => [1;31mERROR: SDK.ServerError
+    [13] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [14] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [15] => RequestId: 71E12FF9-1537-57FC-AA7D-10C0657FE529
+    [16] => Message: The specified instance status does not support this operation.
+    [17] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb9pl7tdsljvuvjn12v"
+    [18] => The checking string is:{"TotalCount":6,"RequestId":"31B93463-9CDC-55DF-9C68-9308A98221AF","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb9pl7tdsljvuvjn12v"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [19] => {"TotalCount":6,"RequestId":"56810F0C-55E3-507E-9FA8-830DDF3A506B","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb9pl7tdsljvuvjn12v"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [20] => {"RequestId":"40BB9BB6-F25C-5DED-871F-B2F3EA533AB1"}
+    [21] => aliyun ecs DeleteInstance --InstanceId "i-8vb9pl7tdsljvuvjn12v"
+    [22] => The checking string is:{"TotalCount":6,"RequestId":"56810F0C-55E3-507E-9FA8-830DDF3A506B","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb9pl7tdsljvuvjn12v"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [23] => 
+    [24] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh my_web_ssh 22.1.31 labpod-1-1
+Error from server (NotFound): pods "labpod-1-1" not found
+Array
+(
+    [0] => pod/labpod-1-1 created
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_delete.sh labpod-1-1
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+Array
+(
+    [0] => pod "labpod-1-1" force deleted
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-5-1
+Array
+(
+    [0] => labvm-5-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-5-1 30
+Array
+(
+    [0] => labvm-5-1
+    [1] => "i-8vbj8r5jqwcx249omx0x"
+    [2] => "i-8vbj8r5jqwcx249omx0x"
+    [3] => This is the EID : "i-8vbj8r5jqwcx249omx0x"
+    [4] => "Stopped"
+    [5] => {"RequestId":"387E9651-44C3-52CE-AA9F-4DD246F65F1F"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vbj8r5jqwcx249omx0x":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Running"
+    [15] => "i-8vbj8r5jqwcx249omx0x":"Running"
+    [16] => "Running"
+    [17] => {"RequestId":"81B2FE59-D021-5C81-80B9-0C14BBE92619"}
+    [18] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vbj8r5jqwcx249omx0x" | sh
+    [19] => "39.98.222.19"
+    [20] => setting autorelease time
+    [21] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vbj8r5jqwcx249omx0x" --AutoReleaseTime=2023-04-02T06:57:39Z
+    [22] => {"RequestId":"531273DB-497F-5AC7-BA14-0D7C986438ED"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-5-1
+Array
+(
+    [0] => "labvm-5-1"
+    [1] => "i-8vbj8r5jqwcx249omx0x"
+    [2] => {"RequestId":"509C13E4-6E7B-53AF-ABF7-58CAAB996989"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vbj8r5jqwcx249omx0x":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vbj8r5jqwcx249omx0x":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"80C070AF-373F-512A-B1C9-966EE90F19B5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => [1;31mERROR: SDK.ServerError
+    [13] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [14] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [15] => RequestId: 55D28EE6-3140-5D1B-AF64-007E2E7817D1
+    [16] => Message: The specified instance status does not support this operation.
+    [17] => [0maliyun ecs DeleteInstance --InstanceId "i-8vbj8r5jqwcx249omx0x"
+    [18] => The checking string is:{"TotalCount":6,"RequestId":"80C070AF-373F-512A-B1C9-966EE90F19B5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [19] => {"TotalCount":6,"RequestId":"0959F2F7-17E2-53A3-9F18-C0EB55EBCD6B","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [20] => [1;31mERROR: SDK.ServerError
+    [21] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [22] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [23] => RequestId: B3C7F67E-8301-53FC-AAAA-1F9BE7CC4162
+    [24] => Message: The specified instance status does not support this operation.
+    [25] => [0maliyun ecs DeleteInstance --InstanceId "i-8vbj8r5jqwcx249omx0x"
+    [26] => The checking string is:{"TotalCount":6,"RequestId":"0959F2F7-17E2-53A3-9F18-C0EB55EBCD6B","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [27] => {"TotalCount":6,"RequestId":"D9889782-CDF1-518A-9E85-88F76B07F3B2","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [28] => [1;31mERROR: SDK.ServerError
+    [29] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [30] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [31] => RequestId: DB28D45F-1249-589F-8112-CF952F60C752
+    [32] => Message: The specified instance status does not support this operation.
+    [33] => [0maliyun ecs DeleteInstance --InstanceId "i-8vbj8r5jqwcx249omx0x"
+    [34] => The checking string is:{"TotalCount":6,"RequestId":"D9889782-CDF1-518A-9E85-88F76B07F3B2","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [35] => {"TotalCount":6,"RequestId":"BF3BB96A-488F-55D9-924F-FE3D24875FB3","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [36] => [1;31mERROR: SDK.ServerError
+    [37] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [38] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [39] => RequestId: 2182F992-09FD-50CB-A5B9-FA40BF620244
+    [40] => Message: The specified instance status does not support this operation.
+    [41] => [0maliyun ecs DeleteInstance --InstanceId "i-8vbj8r5jqwcx249omx0x"
+    [42] => The checking string is:{"TotalCount":6,"RequestId":"BF3BB96A-488F-55D9-924F-FE3D24875FB3","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [43] => {"TotalCount":6,"RequestId":"B8EDEA36-A70E-56CB-8AD3-7E4322E4DD6F","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [44] => {"RequestId":"0A01BA5C-C731-5160-BAB8-1ADCFF7118AD"}
+    [45] => aliyun ecs DeleteInstance --InstanceId "i-8vbj8r5jqwcx249omx0x"
+    [46] => The checking string is:{"TotalCount":6,"RequestId":"B8EDEA36-A70E-56CB-8AD3-7E4322E4DD6F","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vbj8r5jqwcx249omx0x"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [47] => 
+    [48] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh lab_redis 22.1.31 labpod-31-1
+Error from server (NotFound): pods "labpod-31-1" not found
+Array
+(
+    [0] => pod/labpod-31-1 created
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_delete.sh labpod-31-1
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+Array
+(
+    [0] => pod "labpod-31-1" force deleted
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-32-1
+Array
+(
+    [0] => labvm-32-1
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-32-1 30
+Array
+(
+    [0] => labvm-32-1
+    [1] => "i-8vb1ngp61d8jtm9g9my8"
+    [2] => "i-8vb1ngp61d8jtm9g9my8"
+    [3] => This is the EID : "i-8vb1ngp61d8jtm9g9my8"
+    [4] => "Stopped"
+    [5] => {"RequestId":"600736D8-B23E-503D-B580-303B6E0610AF"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vb1ngp61d8jtm9g9my8":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Starting"
+    [15] => "i-8vb1ngp61d8jtm9g9my8":"Starting"
+    [16] => 1
+    [17] => starting ECS ......
+    [18] => starting ECS ......
+    [19] => "Running"
+    [20] => "i-8vb1ngp61d8jtm9g9my8":"Running"
+    [21] => "Running"
+    [22] => {"RequestId":"76C6A65B-2D69-5CA9-93A4-A4ED6F5EE0D2"}
+    [23] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vb1ngp61d8jtm9g9my8" | sh
+    [24] => "39.98.241.212"
+    [25] => setting autorelease time
+    [26] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb1ngp61d8jtm9g9my8" --AutoReleaseTime=2023-04-02T14:25:24Z
+    [27] => {"RequestId":"024467B1-934B-51FD-A76B-7BEF99D312B2"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_create.sh m-8vbe58az41qxqfzwm6yh labvm-32-2
+Array
+(
+    [0] => labvm-32-2
+    [1] => null
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_activate.sh labvm-32-2 30
+Array
+(
+    [0] => labvm-32-2
+    [1] => "i-8vb3wesv0cnn0j69htod"
+    [2] => "i-8vb3wesv0cnn0j69htod"
+    [3] => This is the EID : "i-8vb3wesv0cnn0j69htod"
+    [4] => "Stopped"
+    [5] => {"RequestId":"307ECB88-5AA3-5E28-9E97-180B600FA7F7"}
+    [6] => 1
+    [7] => starting ECS ......
+    [8] => starting ECS ......
+    [9] => "Starting"
+    [10] => "i-8vb3wesv0cnn0j69htod":"Starting"
+    [11] => 1
+    [12] => starting ECS ......
+    [13] => starting ECS ......
+    [14] => "Running"
+    [15] => "i-8vb3wesv0cnn0j69htod":"Running"
+    [16] => "Running"
+    [17] => {"RequestId":"B8178B45-5693-5126-B20D-4C3640D364AF"}
+    [18] => aliyun ecs AllocatePublicIpAddress --InstanceId="i-8vb3wesv0cnn0j69htod" | sh
+    [19] => "39.98.241.225"
+    [20] => setting autorelease time
+    [21] => aliyun ecs ModifyInstanceAutoReleaseTime --InstanceId="i-8vb3wesv0cnn0j69htod" --AutoReleaseTime=2023-04-02T14:27:29Z
+    [22] => {"RequestId":"70E066D4-C7EF-52BA-BD1C-FC23C18E6B5D"}
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-32-2
+Array
+(
+    [0] => "labvm-32-2"
+    [1] => "i-8vb3wesv0cnn0j69htod"
+    [2] => {"RequestId":"75EB7C31-585F-57E2-AE01-079C4FB7449B"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vb3wesv0cnn0j69htod":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vb3wesv0cnn0j69htod":"Stopped"
+    [11] => {"TotalCount":7,"RequestId":"533DBCD8-AEC4-51D2-9926-4D46E1E1CBB9","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => [1;31mERROR: SDK.ServerError
+    [13] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [14] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [15] => RequestId: 87CB7E3F-3A6F-5405-A26C-652E45A49F60
+    [16] => Message: The specified instance status does not support this operation.
+    [17] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [18] => The checking string is:{"TotalCount":7,"RequestId":"533DBCD8-AEC4-51D2-9926-4D46E1E1CBB9","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [19] => {"TotalCount":7,"RequestId":"5B4C9FAE-F4AB-5DD5-B234-60BF472DA63E","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [20] => [1;31mERROR: SDK.ServerError
+    [21] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [22] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [23] => RequestId: DDC0620E-FFC1-5CFB-B992-04A9E44E9C63
+    [24] => Message: The specified instance status does not support this operation.
+    [25] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [26] => The checking string is:{"TotalCount":7,"RequestId":"5B4C9FAE-F4AB-5DD5-B234-60BF472DA63E","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [27] => {"TotalCount":7,"RequestId":"8DA2904A-A5B5-5AC5-8245-D841AFCD3444","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [28] => [1;31mERROR: SDK.ServerError
+    [29] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [30] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [31] => RequestId: 11ACE184-82A1-5820-AB10-6698CA70D7D8
+    [32] => Message: The specified instance status does not support this operation.
+    [33] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [34] => The checking string is:{"TotalCount":7,"RequestId":"8DA2904A-A5B5-5AC5-8245-D841AFCD3444","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [35] => {"TotalCount":7,"RequestId":"6B42A63D-1474-5AD5-9067-021B47E05564","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [36] => [1;31mERROR: SDK.ServerError
+    [37] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [38] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [39] => RequestId: 038FEB73-78E3-57C6-8FC6-E40F32FBC7C8
+    [40] => Message: The specified instance status does not support this operation.
+    [41] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [42] => The checking string is:{"TotalCount":7,"RequestId":"6B42A63D-1474-5AD5-9067-021B47E05564","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [43] => {"TotalCount":7,"RequestId":"AD17A1F8-4A81-5C73-9D7E-83C3C650D64D","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [44] => [1;31mERROR: SDK.ServerError
+    [45] => ErrorCode: IncorrectInstanceStatus.Initializing
+    [46] => Recommend: https://next.api.aliyun.com/troubleshoot?q=IncorrectInstanceStatus.Initializing&product=Ecs
+    [47] => RequestId: A99BF57C-A512-5DCC-86DE-CC5F370EA358
+    [48] => Message: The specified instance status does not support this operation.
+    [49] => [0maliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [50] => The checking string is:{"TotalCount":7,"RequestId":"AD17A1F8-4A81-5C73-9D7E-83C3C650D64D","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [51] => {"TotalCount":7,"RequestId":"22E6F056-286B-55B8-BF21-E954DA2E8CA5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [52] => {"RequestId":"AD9ED1FD-040E-5C57-AD90-D556394591EA"}
+    [53] => aliyun ecs DeleteInstance --InstanceId "i-8vb3wesv0cnn0j69htod"
+    [54] => The checking string is:{"TotalCount":7,"RequestId":"22E6F056-286B-55B8-BF21-E954DA2E8CA5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb3wesv0cnn0j69htod"},{"Status":"Running","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [55] => 
+    [56] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/vm_delete.sh labvm-32-1
+Array
+(
+    [0] => "labvm-32-1"
+    [1] => "i-8vb1ngp61d8jtm9g9my8"
+    [2] => {"RequestId":"06E2FB94-121F-51CE-9B32-F734ACE0848B"}
+    [3] => 1
+    [4] => stopping  ECS ......
+    [5] => "Stopping"
+    [6] => "i-8vb1ngp61d8jtm9g9my8":"Stopping"
+    [7] => 1
+    [8] => stopping  ECS ......
+    [9] => "Stopped"
+    [10] => "i-8vb1ngp61d8jtm9g9my8":"Stopped"
+    [11] => {"TotalCount":6,"RequestId":"97E064C1-C654-5488-A900-42B6947D05D5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [12] => {"RequestId":"02260FBB-8FC9-548A-917B-DDC0DEE58C8A"}
+    [13] => aliyun ecs DeleteInstance --InstanceId "i-8vb1ngp61d8jtm9g9my8"
+    [14] => The checking string is:{"TotalCount":6,"RequestId":"97E064C1-C654-5488-A900-42B6947D05D5","PageSize":10,"PageNumber":1,"InstanceStatuses":{"InstanceStatus":[{"Status":"Stopped","InstanceId":"i-8vb1ngp61d8jtm9g9my8"},{"Status":"Running","InstanceId":"i-8vbe3bv3wz94d3xx7c2h"},{"Status":"Running","InstanceId":"i-8vba9wwm9pu5sojtg7oc"},{"Status":"Running","InstanceId":"i-8vbg54qynikpk03txrky"},{"Status":"Running","InstanceId":"i-8vb6lulg39p8fky7eya0"},{"Status":"Running","InstanceId":"i-8vb6whjybmakura3386p"}]}}
+    [15] => 
+    [16] => No requested ECS
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh my_web_ssh 22.1.31 labpod-1-1
+Error from server (NotFound): pods "labpod-1-1" not found
+Array
+(
+    [0] => pod/labpod-1-1 created
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_delete.sh labpod-1-1
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+Array
+(
+    [0] => pod "labpod-1-1" force deleted
+)
+
+Msg received is:/usr/share/nginx/www/controller/product/pod_create.sh my_web_ssh 22.1.31 labpod-1-1
+Error from server (NotFound): pods "labpod-1-1" not found
+Array
+(
+    [0] => pod/labpod-1-1 created
+)

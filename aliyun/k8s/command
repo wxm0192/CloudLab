@@ -1,0 +1,47 @@
+1、查看
+kubectl api-versions
+kubectl get nodes
+kubectl get pod --all-namespaces
+kubectl get svc --all-namespaces
+kubectl get deploy --all-namespaces
+2、Pod
+(1) 静态Pod
+创建静态pod
+cd /root/yaml
+kubectl apply -f static-web.yaml
+验证访问
+curl clusterip
+删除静态pod
+kubectl delete -f static-web.yaml
+(2)动态Pod
+创建动态pod(通过控制器创建)
+cd /root/yaml
+kubectl apply -f deployment.yaml
+删除动态pod
+kubectl delete -f deployment.yaml
+3、service
+创建service
+kubectl apply -f service-clusterip.yaml
+内网访问
+外网访问
+负载均衡演示
+while true;do curl 39.101.194.142:30010/hostname.html;sleep 1;done
+4、Pod扩缩容
+kubectl scale deployment pc-deployment -n dev --replicas=3
+5、其他命令：
+·创建Pod的两种方式
+陈述式创建/删除
+kubectl run nginx --image=nginx  --port=80 --replicas=1
+kubectl delete pod nginx
+声明式创建/删除
+kubectl apply -f static-web.yaml
+kubectl delete -f static-web.yaml
+·静态Pod和动态Pod
+静态Pod
+kubectl run nginx-app --image=nginx --replicas=2
+kubectl delete pod nginx-app
+动态Pod
+kubectl create  deployment  nginx-app   --image=nginx   --replicas=2
+kubectl delete pod  podname
+
+

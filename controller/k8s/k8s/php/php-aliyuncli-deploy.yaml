@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: php-dpl    
+  name: php-aliyun-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php    
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: php    
+    spec:
+       nodeName: master
+       shareProcessNamespace: true
+       volumes:
+        - name: www-vol
+          nfs:
+            path: /nfs
+            readOnly: false
+            server: 10.102.161.60
+        - name: ini-vol
+          hostPath:
+            path: "/data/php/conf.d/php.ini"
+            type: FileOrCreate
+       containers:
+       - image: php-aliyuncli:latest
+         imagePullPolicy: IfNotPresent 
+         name: php-c
+         volumeMounts:
+         - mountPath: /usr/share/nginx/www
+           name: www-vol
+         - mountPath: /etc/php/7.2/cli/php.ini         
+           name: ini-vol
+         ports:
+         - name: php
+           containerPort: 9000
+       - image: busybox:latest
+         imagePullPolicy: IfNotPresent 
+         name: busybox-c
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10;done"]
+

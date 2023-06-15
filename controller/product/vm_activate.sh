@@ -64,6 +64,7 @@ status=`echo aliyun ecs DescribeInstances --InstanceIds \'[${EID}]\' | sh | jq '
 echo $status ;
 
 #Allocate Public IP
+sleep 3
 echo aliyun ecs ModifyInstanceSpec  --InstanceId=$EID  --InternetMaxBandwidthOut=1 | sh
 echo "aliyun ecs AllocatePublicIpAddress --InstanceId=$EID | sh"
 echo aliyun ecs AllocatePublicIpAddress --InstanceId=$EID | sh | jq '.IpAddress'

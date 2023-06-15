@@ -1,0 +1,53 @@
+<?php
+namespace MySQL\create_lab_env ;
+include 'common.php' ;
+$lab_db_conn ;    //Lab DB class
+$db_conn ;       //common  DB connector class
+$log = new Log() ;
+$log->f_log("Test for log");
+header('content-type:application/json;charset=utf8');
+$lab_db_conn  = new db_connect() ;
+$db_conn = $lab_db_conn->conn ;
+
+
+try     {
+        $my_lab = new Lab($lab_id);
+        }
+catch( Exception $e) {
+        echo $e->getMessage();
+        exit -1;
+        }
+
+ 
+// Attempt select query execution
+$sql = "SELECT * FROM Lab";
+if($result = mysqli_query($db_conn, $sql)){
+    if(mysqli_num_rows($result) > 0){
+        echo "<container>";
+            echo "<row>";
+                echo "<th>id</th>";
+                echo "<th>title</th>";
+                echo "<th>body</th>";
+                echo "<th>image</th>";
+            echo "</div>";
+        while($row = mysqli_fetch_array($result)){
+            echo "<row>";
+                echo "<td>" . $row['id'] . "</td>";
+                echo "<td>" . $row['title'] . "</td>";
+                echo "<td>" . $row['body'] . "</td>";
+                echo "<td>" . $row['image'] . "</td>";
+            echo "</row>";
+        }
+        echo "</div>";
+        // Free result set
+        mysqli_free_result($result);
+    } else{
+        echo "No records matching your query were found.";
+    }
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($article);
+}
+ 
+// Close connection
+mysqli_close($article);
+?>

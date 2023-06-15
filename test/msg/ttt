@@ -1,0 +1,60 @@
+function get_lab_session_id($lab_id_i)    // Get the session id assigned for this session ; get_current_session_id() get the current session id recoreded .
+{
+	/*
+	$lab_conf=get_lab_conf($lab_id_i);
+	echo  $lab_conf ;
+	if(empty( $lab_conf))
+		{
+			echo "Faild to get lab configuration , exit <br>";
+			return -1 ;
+		}
+        if( $lab_conf == -1 )
+        {
+                 printf("The required lab configuration not found : %d <br> ", $lab_id_i );
+                 return -1 ;
+        }
+	*/
+        if((int)$_SESSION['lab_session_id']<1 or empty($_SESSION['lab_session_id']) )
+                {
+                        $lab_session_id=get_current_session_id( (int)$lab_id_i);    // 第一个session 返回值为 -1
+                        if((int )$lab_session_id == -1)
+                                {
+                                 $lab_session_id=0 ;     // 对于第一个session ， lab_session_id 置为 0
+                                }
+                        $lab_session_id += 1 ;  
+			$_SESSION['lab_session_id'] =  $lab_session_id ;
+		}
+		else 
+		{
+			$lab_session_id = $_SESSION['lab_session_id'] ;
+		}
+		return $lab_session_id ;
+}
+
+function lab_id_init()    //Get lab_id by _GET() and set  _Session['lab_id']  if _Session['lab_id'] failed , else get lab_id  by  _Session['lab_id']  
+{
+	session_id();
+	session_start();
+	$mylab_id= $_SESSION['lab_id'] ;
+	if(empty($mylab_id))
+			{
+				echo "New  lab started  <br>";
+				 $mylab_id = $_GET['lab_id'] ;
+				if(empty($mylab_id))
+					{
+						echo "No GET value for lab_id <br>";
+						return -1 ; 
+					}
+					else
+					{
+						echo "<br>"."lab_id is from _GET   : ".$mylab_id."<br>" ;
+						$_SESSION['lab_id']=$mylab_id ;
+						return  $mylab_id ;
+					}
+			}
+			else
+			{
+				echo "<br>"."lab_id is from _Session : ".$mylab_id."<br>" ;
+				return  $mylab_id ;
+ 			}
+}

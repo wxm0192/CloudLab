@@ -1,0 +1,126 @@
+{
+	"Instances": {
+		"Instance": [
+			{
+				"AutoReleaseTime": "2022-12-17T12:40Z",
+				"ClusterId": "",
+				"Cpu": 1,
+				"CpuOptions": {
+					"CoreCount": 1,
+					"Numa": "",
+					"ThreadsPerCore": 1
+				},
+				"CreationTime": "2022-12-17T04:30Z",
+				"CreditSpecification": "",
+				"DedicatedHostAttribute": {
+					"DedicatedHostClusterId": "",
+					"DedicatedHostId": "",
+					"DedicatedHostName": ""
+				},
+				"DedicatedInstanceAttribute": {
+					"Affinity": "",
+					"Tenancy": ""
+				},
+				"DeletionProtection": false,
+				"DeploymentSetId": "",
+				"Description": "",
+				"DeviceAvailable": true,
+				"EcsCapacityReservationAttr": {
+					"CapacityReservationId": "",
+					"CapacityReservationPreference": ""
+				},
+				"EipAddress": {
+					"AllocationId": "",
+					"InternetChargeType": "",
+					"IpAddress": ""
+				},
+				"ExpiredTime": "2099-12-31T15:59Z",
+				"GPUAmount": 0,
+				"GPUSpec": "",
+				"HibernationOptions": {
+					"Configured": false
+				},
+				"HostName": "iZ8vb9ztjs977f8zc46kbvZ",
+				"ImageId": "m-8vb125m26qkvi102ogdp",
+				"ImageOptions": {},
+				"InnerIpAddress": {
+					"IpAddress": []
+				},
+				"InstanceChargeType": "PostPaid",
+				"InstanceId": "i-8vb9ztjs977f8zc46kbv",
+				"InstanceName": "lab_31_6",
+				"InstanceNetworkType": "vpc",
+				"InstanceType": "ecs.s6-c1m2.small",
+				"InstanceTypeFamily": "ecs.s6",
+				"InternetChargeType": "PayByTraffic",
+				"InternetMaxBandwidthIn": 0,
+				"InternetMaxBandwidthOut": 0,
+				"IoOptimized": true,
+				"Memory": 2048,
+				"MetadataOptions": {
+					"HttpEndpoint": "",
+					"HttpTokens": ""
+				},
+				"NetworkInterfaces": {
+					"NetworkInterface": [
+						{
+							"MacAddress": "00:16:3e:0e:74:84",
+							"NetworkInterfaceId": "eni-8vb9ztjs977f8zc8n26e",
+							"PrimaryIpAddress": "172.30.10.16",
+							"PrivateIpSets": {
+								"PrivateIpSet": [
+									{
+										"Primary": true,
+										"PrivateIpAddress": "172.30.10.16"
+									}
+								]
+							},
+							"Type": "Primary"
+						}
+					]
+				},
+				"OSName": "CentOS  7.9 64位",
+				"OSNameEn": "CentOS  7.9 64 bit",
+				"OSType": "linux",
+				"OperationLocks": {
+					"LockReason": []
+				},
+				"PublicIpAddress": {
+					"IpAddress": []
+				},
+				"Recyclable": false,
+				"RegionId": "cn-zhangjiakou",
+				"ResourceGroupId": "",
+				"SaleCycle": "",
+				"SecurityGroupIds": {
+					"SecurityGroupId": [
+						"sg-8vb87jnn7iq7gzp6d01q"
+					]
+				},
+				"SerialNumber": "99191c47-1c1c-40bc-802d-e7f4b6f1875e",
+				"SpotPriceLimit": 0,
+				"SpotStrategy": "NoSpot",
+				"StartTime": "2022-12-17T04:30Z",
+				"Status": "Running",
+				"StoppedMode": "Not-applicable",
+				"VlanId": "",
+				"VpcAttributes": {
+					"NatIpAddress": "",
+					"PrivateIpAddress": {
+						"IpAddress": [
+							"172.30.10.16"
+						]
+					},
+					"VSwitchId": "vsw-8vbn0qdm4x187nnxcjadp",
+					"VpcId": "vpc-8vbnw6ctxc4bytuozzv3m"
+				},
+				"ZoneId": "cn-zhangjiakou-b"
+			}
+		]
+	},
+	"NextToken": "",
+	"PageNumber": 1,
+	"PageSize": 10,
+	"RequestId": "3C550B4C-8521-5C7B-B6FF-853C6B366E24",
+	"TotalCount": 1
+}
